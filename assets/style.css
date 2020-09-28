@@ -1358,6 +1358,7 @@ footer[role] p:last-child {
 }
 @media only screen and (min-width: 64rem) {
 	[data-location="weblog-page"] article:not([itemscope]) {
+		display: flex;
 		margin: 0 -10rem -7.5rem 0;
 	}
 	[data-location="weblog-page"] article:not([itemscope]) nav[role] {
