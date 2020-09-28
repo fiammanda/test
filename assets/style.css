@@ -1307,6 +1307,14 @@ footer[role] p:last-child {
 	color: hsl(0, 0%, var(--bright95));
 	background: hsl(0, 0%, var(--bright40));
 }
+[data-location="weblog-page"] article:not([itemscope]) nav[role] a:hover::before,
+[data-scheme="dark"] [data-location="weblog-page"] article:not([itemscope]) nav[role] a.current:hover::before {
+	background: hsl(180, 50%, 90%);
+}
+[data-scheme="dark"] [data-location="weblog-page"] article:not([itemscope]) nav[role] a:hover::before,
+[data-location="weblog-page"] article:not([itemscope]) nav[role] a.current:hover::before {
+	background: hsl(210, 20%, 30%);
+}
 [data-location="weblog-page"] article:not([itemscope]) ul {
 	padding: 0;
 	max-width: 100%;
