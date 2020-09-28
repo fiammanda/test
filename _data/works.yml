@@ -1,0 +1,187 @@
+
+鬼泣:
+  orig: Devil May Cry
+  slug: dmc
+  show: true
+薄樱鬼:
+  orig: 薄桜鬼
+  slug: hakuoki
+  show: true
+哈利波特:
+  orig: Harry Potter
+  slug: hp
+  show: true
+K:
+  orig: K Project
+  slug: k
+  show: true
+火影忍者:
+  orig: ナルト
+  slug: naruto
+  show: true
+网球王子:
+  orig: テニスの王子様
+  slug: pot
+  show: true
+加勒比海盗:
+  orig: Pirates of the Caribbean
+  slug: potc
+  show: true
+魔兽世界:
+  orig: World of Warcraft
+  slug: wow
+  show: true
+历史衍生:
+  desc: 三国 日本战国
+  list: 三国杀 三国无双 战国无双 无双大蛇 信长的野望
+  slug: history
+  show: true
+其它:
+  desc: Miscellaneous
+  list: 文豪野犬 激战 RPF 神探夏洛克 陆小凤传奇 圣斗士星矢 网球王子TV 刀剑乱舞
+  slug: other
+  show: true
+三国:
+  slug: history
+三国杀:
+  slug: history
+三国无双:
+  orig: 三國無双
+  slug: history
+战国无双:
+  orig: 戦国無双
+  slug: history
+无双大蛇:
+  orig: 無双大蛇
+  slug: history
+信长的野望:
+  orig: 信長の野望
+  slug: history
+文豪野犬:
+  orig: 文豪ストレイドッグス
+  slug: other
+激战:
+  orig: Guild Wars
+  slug: other
+RPF:
+  slug: other
+神探夏洛克:
+  orig: Sherlock Holmes (BBC)
+  slug: other
+陆小凤传奇:
+  slug: other
+圣斗士星矢:
+  orig: 聖闘士星矢
+  slug: other
+网球王子TV:
+  disp: 网球王子 TV
+  slug: other
+刀剑乱舞:
+  orig: 刀剣乱舞
+  slug: other
+
+但丁/维吉尔:
+  ship: 半魔骨科
+
+原田左之助/不知火匡:
+  disp: 原田<span>左之助</span>/不知火<span>匡</span>
+原田左之助:
+  disp: 原田<span>左之助</span>
+不知火匡:
+  disp: 不知火<span>匡</span>
+
+德拉科·马尔福/哈利·波特:
+  disp: 德拉科<span>·马尔福</span>/哈利<span>·波特</span>
+  orig: Draco Malfoy/Harry Potter
+  ship: Drarry
+  slug: hp/drarry
+哈利·波特/西弗勒斯·斯内普:
+  disp: 哈利<span>·波特</span>/西弗勒斯<span>·斯内普</span>
+  orig: Harry Potter/Severus Snape
+  ship: Snarry
+  slug: hp/snarry
+卢修斯·马尔福/西弗勒斯·斯内普:
+  disp: 卢修斯<span>·马尔福</span>/西弗勒斯<span>·斯内普</span>
+  orig: Lucius Malfoy/Severus Snape
+  ship: Snucius
+  slug: hp/snucius
+西弗勒斯·斯内普/作者:
+  disp: 西弗勒斯<span>·斯内普</span>/作者
+德拉科·马尔福:
+  orig: Draco Malfoy
+  disp: 德拉科<span>·马尔福</span>
+
+道明寺安迪/宗像礼司:
+  disp: 道明寺<span>安迪</span>/宗像<span>礼司</span>
+宗像礼司/周防尊:
+  disp: 宗像<span>礼司</span>/周防<span>尊</span>
+  ship: 双王
+  slug: k/mikorei
+
+日向宁次/勘九郎:
+  disp: <span>日向</span>宁次/勘九郎
+奈良鹿丸/手鞠:
+  disp: <span>奈良</span>鹿丸/手鞠
+  ship: 鹿鞠
+
+迹部景吾/手冢国光:
+  disp: 迹部<span>景吾</span>/手冢<span>国光</span>
+  orig: 跡部景吾/手塚国光
+  ship: 双部
+  slug: pot/atozuka
+乾贞治/手冢国光:
+  disp: 乾<span>贞治</span>/手冢<span>国光</span>
+  orig: 乾貞治/手塚国光
+  abbr: 乾冢
+  slug: pot/inuzuka
+千岁千里/橘桔平:
+  disp: 千岁<span>千里</span>/橘<span>桔平</span>
+  orig: 千歳千里/橘桔平
+  ship: 九州二翼
+  slug: pot/niyoku
+木手永四郎/丸井文太:
+  disp: 木手<span>永四郎</span>/丸井<span>文太</span>
+真田弦一郎/幸村弦一郎:
+  disp: 真田<span>弦一郎</span>/幸村<span>弦一郎</span>
+
+季步/钟国光:
+  ship: 双部
+
+詹姆斯·诺灵顿/杰克·斯帕罗:
+  disp: <span>詹姆斯·</span>诺灵顿/<span>杰克·</span>斯帕罗
+  orig: James Norrington/Jack Sparrow
+  ship: Sparrington
+  slug: potc/sparrington
+
+拉希奥/安度因·乌瑞恩:
+  disp: 拉希奥/安度因<span>·乌瑞恩</span>
+  orig: Wrathion/Anduin Wrynn
+  ship: 黑白王子
+  slug: wow/wranduin
+
+曹丕/郭嘉:
+  abbr: 丕嘉
+曹丕/司马懿:
+  abbr: 丕懿
+曹丕/石田三成:
+  abbr: 丕三
+明智光秀/织田信长:
+  disp: <span>明智</span>光秀/<span>织田</span>信长
+  orig: 明智光秀/織田信長
+
+双宗师:
+  slug: other/rpf
+
+太宰治/织田作之助:
+  disp: 太宰<span>治</span>/织田<span>作之助</span>
+
+麦考夫/夏洛克·福尔摩斯:
+  disp: 麦考夫/夏洛克<span>·福尔摩斯</span>
+  orig: Mycoft/Sherlock Holmes
+
+阿布罗狄:
+  orig: Aphrodite
+
+压切长谷部/烛台切光忠:
+  disp: 压切<span>长谷部</span>/烛台切<span>光忠</span>
+  orig: へし切長谷部/燭台切光忠

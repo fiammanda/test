@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/test/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/test/" rel="alternate" type="text/html" /><updated>2020-09-29T03:10:02+08:00</updated><id>http://localhost:4000/test/feed.xml</id><title type="html">The F Word</title><subtitle>这个没有味道的单词在你的舌尖溶解并且提供半天份量的毫无营养</subtitle><author><name>fiammanda</name></author><entry><title type="html">Jekyll 迷惑行为</title><link href="http://localhost:4000/test/weblog/20200928" rel="alternate" type="text/html" title="Jekyll 迷惑行为" /><published>2020-09-28T00:00:00+08:00</published><updated>2020-09-28T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/jekyll-myth</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200928">&lt;p&gt;&lt;code&gt;folder/_posts&lt;/code&gt; 中内容仍属于 &lt;code&gt;site.posts&lt;/code&gt;，且 &lt;code&gt;category&lt;/code&gt; 为 Folder。&lt;/p&gt;
+
+&lt;p&gt;Liquid 语言 else if 竟然是 &lt;code&gt;elsif&lt;/code&gt;，而且不能进行正则替换！&lt;/p&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><category term="Jekyll" /><summary type="html">folder/_posts 中内容仍属于 site.posts，且 category 为 Folder。</summary></entry><entry><title type="html">CSS 问题发现</title><link href="http://localhost:4000/test/weblog/20200910" rel="alternate" type="text/html" title="CSS 问题发现" /><published>2020-09-10T00:00:00+08:00</published><updated>2020-09-10T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/css-issues</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200910">&lt;p&gt;Firefox 中，&lt;code&gt;html&lt;/code&gt; 规定语言为 &lt;code&gt;CJK&lt;/code&gt; 后，&lt;code&gt;text-align: justify&lt;/code&gt; 才对中文起效；webkit 用 &lt;code&gt;text-justify: inter-ideograph&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;Mobile Safari 图片在 &lt;code&gt;flexbox&lt;/code&gt; 里就不会自动高度了。&lt;/p&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><category term="CSS" /><summary type="html">Firefox 中，html 规定语言为 CJK 后，text-align: justify 才对中文起效；webkit 用 text-justify: inter-ideograph。</summary></entry><entry><title type="html">晚安</title><link href="http://localhost:4000/test/works/20200730" rel="alternate" type="text/html" title="晚安" /><published>2020-07-30T00:00:00+08:00</published><updated>2020-07-30T00:00:00+08:00</updated><id>http://localhost:4000/test/works/goodnight</id><content type="html" xml:base="http://localhost:4000/test/works/20200730">&lt;h1&gt;晚安&lt;/h1&gt;
+
+&lt;p&gt;“噩梦？”&lt;/p&gt;
+
+&lt;p&gt;但丁应了一声。他坐在窗台上，双腿垂在屋外。月光把他赤裸的上半身割出明暗，石膏般的质感。&lt;/p&gt;
+
+&lt;p&gt;他没有立刻回到床上的意思，维吉尔便也起身，赤脚走过去。他弟弟仰起头，凉爽的发丝落上他的胸口，带着一点儿湿意。&lt;/p&gt;
+
+&lt;p&gt;“要讲讲吗。”&lt;/p&gt;
+
+&lt;p&gt;但丁似乎正等着这句。他清了清嗓子。“我梦到，杀了你。”&lt;/p&gt;
+
+&lt;p&gt;维吉尔说，“嗯。”&lt;/p&gt;
+
+&lt;p&gt;他弟弟抬腿跨回窗内，和他从不同侧上床，在被子下迅速重新温热起来，一边讲了一段维吉尔稔知的故事——了解得不太确切，毕竟当时他的灵魂囿于一具傀儡之中，直到但丁闯到他面前。杀了他。&lt;/p&gt;
+
+&lt;p&gt;他心不在焉听着对方絮絮低述，几乎感到了某种催眠效果。但丁不时停下来，回忆或修正种种细节，几缕发丝被他自己制造的气流不断吹起。他抓过维吉尔的手，把它们全部捋向脑后。&lt;/p&gt;
+
+&lt;p&gt;维吉尔让手停在那儿。他感到他额前浮出细密的汗珠。他听到他的声音：“——感觉太真实了。就像曾经发生过的事。维吉尔——”&lt;/p&gt;
+
+&lt;p&gt;“是梦。”维吉尔道，顺手把那层汗抹去，“但丁不能加一分。”&lt;/p&gt;
+
+&lt;p&gt;原来如此，他想。他真的忘了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;翠西曾经问他那时发生了什么。但丁与黑骑士最后一次相遇时。维吉尔没有满足她的好奇心，而她耸了耸肩，告诉他他弟弟对此讳莫如深。&lt;/p&gt;
+
+&lt;p&gt;“也许因为被我打到头，记忆混乱。”维吉尔说。&lt;/p&gt;
+
+&lt;p&gt;她惊奇地看着他，“他倒是真的告诉我，自己失忆了。”&lt;/p&gt;
+
+&lt;p&gt;维吉尔不置可否。“那时”在他绝对不想与人谈起的事件表中也许能排到第一——尤其不想与但丁谈起，哪怕他们如今终于能够谈论许多往事，而他甚至可以承认一些错误，他弟弟则愿意揽去部分责任。得知但丁对此守口如瓶，他难免生出一些隐秘而无法阐明的欣喜。&lt;/p&gt;
+
+&lt;p&gt;至于还无法谈的那些，他对自己说：你必须想办法克服它，否则就会被它摧毁。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;他的手被但丁拿开。握紧。“十年前你在哪儿？”&lt;/p&gt;
+
+&lt;p&gt;“魔界，你知道的。” 维吉尔半垂眼帘，随时准备再度进入沉眠的样子。可他弟弟接着提出几百个问题，他只好为其一一捏造答案，直到描述到魔界饮食，但丁闷声笑了笑：“停！我又要做噩梦了。”&lt;/p&gt;
+
+&lt;p&gt;“我需要一个晚安吻。”他补充道。&lt;/p&gt;
+
+&lt;p&gt;他们鼻尖错开，然后维吉尔说，“晚安。”&lt;/p&gt;
+
+&lt;p&gt;“还好是做梦。我宁可失忆。”他弟弟小声嘟哝。&lt;/p&gt;
+
+&lt;p&gt;维吉尔在他看不到的角度微微翘起嘴角。从六岁起，他便坚信自己应当比弟弟承担更多。&lt;/p&gt;
+
+&lt;p&gt;他拍了拍但丁的背。仿佛敲一扇门。&lt;/p&gt;
+
+&lt;p&gt;END&lt;/p&gt;</content><author><name>fiammanda</name></author><category term="works" /><summary type="html">有时，人们主动忘记能将自己撕碎的回忆。</summary></entry><entry><title type="html">想用 WebP</title><link href="http://localhost:4000/test/weblog/20200421" rel="alternate" type="text/html" title="想用 WebP" /><published>2020-04-21T00:00:00+08:00</published><updated>2020-04-21T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/photoshop-webp-plugin</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200421">&lt;p&gt;苹果做个人，快点支持吧。&lt;/p&gt;
+
+&lt;p&gt;插件存档：&lt;a href=&quot;http://telegraphics.com.au/sw/product/WebPFormat&quot;&gt;Photoshop WebP Plugin&lt;/a&gt;。&lt;/p&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><summary type="html">苹果做个人，快点支持吧。</summary></entry><entry><title type="html">将 Gridea 部署到 Gitee</title><link href="http://localhost:4000/test/weblog/20200420" rel="alternate" type="text/html" title="将 Gridea 部署到 Gitee" /><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/gridea-on-gitee</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200420">&lt;p&gt;部署到 Gitee 需要已经在 Github 上部署好的 Gridea 和一个 Gitee 账号（废话）。 &lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;然后必须对站内链接进行处理，不然 Gitee 站内点击都会直接跳转到 Github。存在两种情况：&lt;/p&gt;
+
+&lt;p&gt;如果部署在根目录就很方便，直接绝对路径：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;主页：&lt;code&gt;href=&quot;/&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;文章：&lt;code&gt;href=&quot;/post/&amp;lt;%= post.fileName %&amp;gt;&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;标签：&lt;code&gt;href=&quot;/tag/&amp;lt;%= tag.slug %&amp;gt;&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;样式：&lt;code&gt;href=&quot;/styles/main.css&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果像我一样没放在根目录就要稍稍进行一些处理……使用相对路径：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;主页：&lt;code&gt;href=&quot;&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;文章：&lt;code&gt;href=&quot;post/&amp;lt;%= post.fileName %&amp;gt;&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;标签：&lt;code&gt;href=&quot;tag/&amp;lt;%= tag.slug %&amp;gt;&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;样式：&lt;code&gt;href=&quot;styles/main.css&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;重点在于在 &lt;code&gt;head&lt;/code&gt; 内对 &lt;code&gt;base&lt;/code&gt; 进行设置：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;base href=&quot;&amp;lt;%- base() %&amp;gt;&quot;&amp;gt;
+&amp;lt;% function base() {
+	return themeConfig.domain.indexOf('localhost') &amp;gt; 0 ? themeConfig.domain : '/所在目录/';
+} %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样本地预览和云端都能达到同样效果。&lt;/p&gt;
+
+&lt;p&gt;最后用 Gitee 导入 Github Repo，每次推送手工同步一下（……）就好惹。&lt;/p&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><category term="Gridea" /><category term="Web" /><summary type="html">部署到 Gitee 需要已经在 Github 上部署好的 Gridea 和一个 Gitee 账号（废话）。</summary></entry><entry><title type="html">近期本地和隔壁更新</title><link href="http://localhost:4000/test/weblog/20200419" rel="alternate" type="text/html" title="近期本地和隔壁更新" /><published>2020-04-19T00:00:00+08:00</published><updated>2020-04-19T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/recent-updates</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200419">&lt;p&gt;无关发言：scoop 爱了。 &lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Gridea Deep Song Theme&lt;br /&gt;
+Mobile Safari 不会图片自动高度的吗（瑟瑟&lt;br /&gt;
+以及为什么我老是出现重复草稿……&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;jQuery 版本更新喇&lt;br /&gt;
+但是 LeanCloud 不能更，新的会要求 server 呃呃呃&lt;br /&gt;
+还有 Valine 得放在我自己的代码后面，不懂惹……&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;魔改 markedjs&lt;br /&gt;
+终于把 &lt;code&gt;blockquote&lt;/code&gt; 改成我想要的亚子了！&lt;br /&gt;
+然鹅脚注还是不会，算了算了。&lt;br /&gt;
+其它修改包括：&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;_cite_
+
+__mark__
+
+# H1 &amp;lt;p&amp;gt;subtitle&amp;lt;/p&amp;gt;
+
+Table Caption
+=============
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><category term="Web" /><summary type="html">无关发言：scoop 爱了。</summary></entry><entry><title type="html">今天的 Windows Spotlight 爱了并代了</title><link href="http://localhost:4000/test/weblog/20200417" rel="alternate" type="text/html" title="今天的 Windows Spotlight 爱了并代了" /><published>2020-04-17T00:00:00+08:00</published><updated>2020-04-17T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/dubrovnik-croatia</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200417">&lt;p&gt;克罗地亚杜布罗夫尼克的老港口：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;向来不轻易称赞的爱尔兰剧作家乔治·萧伯纳曾如此描述这座地中海港口城市：“如果你想见识人间天堂，那么就来杜布罗夫尼克。”在这里，坚固的中世纪城墙和城堡环绕着掩藏在山景中的文艺复兴时期建筑，旧城的大部分地区孤悬在亚得里亚海上。图片中显示出老港口及其入口处建于 14 世纪的圣约翰堡垒（或称为穆罗塔）。克罗地亚整个杜布罗夫尼克旧城是一片辉煌的景象。其历史起源变得越来越久远：最近的理论认为该市是由来自古希腊的水手建立的。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><summary type="html">克罗地亚杜布罗夫尼克的老港口：</summary></entry><entry><title type="html">图片管理</title><link href="http://localhost:4000/test/weblog/20200414" rel="alternate" type="text/html" title="图片管理" /><published>2020-04-14T00:00:00+08:00</published><updated>2020-04-14T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/image-management</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200414">&lt;p&gt;到底是用 MD5 命名 + Tag 呢，还是直接文件名标注呃呃呃呃。&lt;/p&gt;
+
+&lt;p&gt;目前暂时是先用上了 &lt;a href=&quot;https://github.com/Dijji/FileMeta/releases&quot;&gt;FileMeta&lt;/a&gt;。&lt;/p&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><category term="App" /><summary type="html">到底是用 MD5 命名 + Tag 呢，还是直接文件名标注呃呃呃呃。</summary></entry><entry><title type="html">Markdown Editor 踩坑记录</title><link href="http://localhost:4000/test/weblog/20200413" rel="alternate" type="text/html" title="Markdown Editor 踩坑记录" /><published>2020-04-13T00:00:00+08:00</published><updated>2020-04-13T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/markdown-editor-apps</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200413">&lt;p&gt;哼，还不都是用 &lt;code&gt;CodeMirror&lt;/code&gt; 这个轮子造的。 &lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;APP&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;PC&lt;/th&gt;
+      &lt;th&gt;格式&lt;/th&gt;
+      &lt;th&gt;打开/同步&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;字数统计&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;中文字数统计&lt;/th&gt;
+      &lt;th&gt;其它&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;AceMark&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;.md&lt;/td&gt;
+      &lt;td&gt;✗&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;再见&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Allegory&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;.allegory&lt;/td&gt;
+      &lt;td&gt;iCloud Files&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;硬要发明格式&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Bear&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;.md?&lt;/td&gt;
+      &lt;td&gt;iCloud ($)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;太贵溜了溜了&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Drafts&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;.draftsExport&lt;/td&gt;
+      &lt;td&gt;iCloud&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;硬要发明格式&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Focus Notes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td&gt;.focusnote&lt;/td&gt;
+      &lt;td&gt;JianGuo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td&gt;写进去了就复制不来&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;JianGuoMarkdown&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td&gt;.md&lt;/td&gt;
+      &lt;td&gt;JianGuo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;你一个坚果云怎么连中文统计都没有&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Just Write&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td&gt;.md&lt;/td&gt;
+      &lt;td&gt;iCloud Files&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;有点难用&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mark(down) Notes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;.md&lt;/td&gt;
+      &lt;td&gt;✗&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;再见&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Markdown （黑色&lt;span data-present=&quot;space&quot;&gt;&lt;/span&gt;logo）&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td&gt;.md&lt;/td&gt;
+      &lt;td&gt;iCloud Files&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;再见&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Noto&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;iCloud&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;硬要发明格式&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Paper&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td&gt;.md&lt;/td&gt;
+      &lt;td&gt;iCloud Files&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;唯一的缺点就是字数统计&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Pretex&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td&gt;.md&lt;/td&gt;
+      &lt;td&gt;iCloud Files&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;有点朴素&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Prompts&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;iCloud Files&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;还是很好玩的留着吧&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;小章鱼&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✗&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;iCloud ($)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;✓&lt;/td&gt;
+      &lt;td&gt;好看是好看，同步（。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;style&gt;
+	th:nth-child(5) { min-width: 2em; }
+	th:nth-child(6) { min-width: 3em; }
+	th:nth-child(7) { min-width: 8em; }
+&lt;/style&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><category term="App" /><summary type="html">哼，还不都是用 CodeMirror 这个轮子造的。</summary></entry><entry><title type="html">Valine 移除自带样式</title><link href="http://localhost:4000/test/weblog/20200408" rel="alternate" type="text/html" title="Valine 移除自带样式" /><published>2020-04-08T00:00:00+08:00</published><updated>2020-04-08T00:00:00+08:00</updated><id>http://localhost:4000/test/weblog/valine-remove-official-style</id><content type="html" xml:base="http://localhost:4000/test/weblog/20200408">&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;head style&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;eq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fiammanda</name></author><category term="weblog" /><category term="JavaScript" /><category term="jQuery" /><summary type="html">$('head style').eq(-1).remove();</summary></entry></feed>

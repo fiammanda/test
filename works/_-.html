@@ -1,0 +1,12 @@
+---
+layout: default
+title: Works
+permalink: /works/full/
+---
+
+{%- for page in site.categories['works'] -%}
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+	{% include meta.html %}
+</article>
+{%- endfor -%}

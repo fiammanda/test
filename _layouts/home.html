@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div role="img">{{ site.data.svg['logo'] }}</div>
+<h1 class="page-title">{{ site.title }}</h1>
+<p class="page-subtitle">{{ site.author }} / {{ site.name }}</p>
+<p>{{ site.description }}</p>
+
+<article>
+	<div>
+		<a class="internal" href="{{ site.baseurl }}/weblog/">日常/Weblog</a>
+	</div>
+	<div>
+		<a class="internal" href="{{ site.baseurl }}/widget/">工具/Widget</a>
+	</div>
+	<div>
+		<a class="internal" href="{{ site.baseurl }}/works/">更新/Works</a>
+		<ul>
+			{%- for datum in site.data.works limit: 10 -%}{% if datum[1].show %}
+			<li><a class="internal" href="{{ site.baseurl }}/works/{{ datum[1].slug }}/">{{ datum[1].orig | default: datum[0] }}</a></li>
+			{%- endif -%}{%- endfor -%}
+		</ul>
+	</div>
+</article>

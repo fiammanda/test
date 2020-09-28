@@ -1,0 +1,43 @@
+
+	<header>
+		<p>
+			<time itemprop="datePublished">{{ page.date | date: '%Y-%m-%d' }}</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				{{ site.data.svg['word'] }}
+				{{ page.content | number_of_words: 'cjk' }}
+			</span>{% comment %} Github Actions Needed {% endcomment %}
+		</p>
+		<p>
+			<span itemprop="contentRating">{{ page.rating }}</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="{{ site.baseurl }}/works/{{ site.data.works[page.fandom].slug }}/">{{ page.fandom }}</a></span>
+			<span itemprop="character">
+				{%- assign items = page.characters | split: ' ' -%}
+				{%- for item in items -%}
+					{%- if site.data.works[item].slug -%}
+					<a class="internal" rel="tag" href="{{ site.baseurl }}/works/{{ site.data.works[item].slug }}/">
+					{%- else -%}
+					<a>{%- endif -%}
+						{{- site.data.works[item].disp | default: item -}}
+					</a>&nbsp;
+				{%- endfor -%}
+			</span>
+		</p>
+		{% if page.source %}<p>
+			{{ page.sourcenote }}译自 
+			{% if page.sourcelink %}<a rel="noopener noreferrer nofollow" target="_blank" href="{{ page.sourcelink }}">
+				<span itemprop="translationOfWork">{{ page.source }}</span>
+				{{ site.data.svg['link'] }}
+			</a>
+			{%- else -%}
+			<span itemprop="translationOfWork">{{ page.source }}</span>
+			{%- endif -%}
+		</p>{% elsif page.sourcenote %}<p>
+			{{ page.sourcenote }}
+		</p>{% endif %}
+	</header>
+	<div itemprop="abstract">
+		{{ page.excerpt | markdownify }}
+	</div>
+	{% if page.notes %}<div itemprop="notes">
+		{{ page.notes | markdownify | replace: '<a href="http', '<a target="_blank" rel="noopener noreferrer nofollow" href="http' }}
+	</div>{% endif %}

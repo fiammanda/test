@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% assign fandom = site.data.works[page.title].list | default: page.title %}
+<h2 class="page-title">{{ site.data.works[page.title].orig | default: page.title }}</h2>
+<p class="page-subtitle">{{ site.data.works[page.title].desc | default: page.title }}</p>
+
+{%- for page in site.categories['works'] -%}
+	{%- if fandom contains page.fandom -%}
+{% unless fandom contains 'TV' and page.fandom == '网球王子' %}
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+	{% include meta.html %}
+</article>
+{% endunless %}
+	{%- endif -%}
+{%- endfor -%}

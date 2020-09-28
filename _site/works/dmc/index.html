@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>鬼泣 | fiammanda</title>
+	<meta charset="utf-8" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="author" content="fiammanda" />
+	<link rel="mask-icon" href="/favicon.svg" color="#666666">
+	<link rel="stylesheet" type="text/css" href="/test/assets/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.2.0/dist/av-min.js"></script>
+	<script src="/test/assets/scripts.js"></script>
+</head>
+
+<body class="load" data-location="works-fandom">
+
+<a role="button" data-expand="header">
+	<span></span><span></span><span></span>
+</a>
+
+
+<header role="banner">
+	<ul role="menu">
+		<li role="menuitem"><a class="internal" rel="home" href="/test/">吾不禁英俊地笑了起来</a></li>
+		<li role="menuitem"><a class="internal" href="/test/weblog/">日常<span>/Weblog</span></a></li>
+		<li role="menuitem"><a class="internal" href="/test/widget/">工具<span>/Widget</span></a></li>
+		<li role="menuitem"><a class="internal" href="/test/works/">更新<span>/Works</span></a><ul>
+			<li><a class="internal" href="/test/works/dmc/">Devil May Cry</a></li>
+			<li><a class="internal" href="/test/works/hakuoki/">薄桜鬼</a></li>
+			<li><a class="internal" href="/test/works/hp/">Harry Potter</a></li>
+			<li><a class="internal" href="/test/works/k/">K Project</a></li>
+			<li><a class="internal" href="/test/works/naruto/">ナルト</a></li>
+			<li><a class="internal" href="/test/works/pot/">テニスの王子様</a></li>
+			<li><a class="internal" href="/test/works/potc/">Pirates of the Caribbean</a></li>
+			<li><a class="internal" href="/test/works/wow/">World of Warcraft</a></li>
+			<li><a class="internal" href="/test/works/history/">历史衍生</a></li>
+			<li><a class="internal" href="/test/works/other/">其它</a></li></ul></li>
+		<li role="menuitem"><a href="/search/" class="internal" rel="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M17.2,34.2c-7.4,0-13.4-6-13.4-13.4s6-13.4,13.4-13.4s13.4,6,13.4,13.4S24.6,34.2,17.2,34.2L17.2,34.2z M17.2,10c-6,0-10.9,4.9-10.9,10.9s4.9,10.9,10.9,10.9S28,26.9,28,20.9S23.1,10,17.2,10L17.2,10z M35.8,39.6c0.5-0.5,0.5-1.3,0-1.8l-5.7-5.7c-0.5-0.5-1.3-0.5-1.8,0c-0.5,0.5-0.5,1.3,0,1.8l5.7,5.7c0.2,0.2,0.6,0.4,0.9,0.4C35.2,39.9,35.6,39.8,35.8,39.6z"/></svg></a></li>
+		<li role="menuitem"><a class="scheme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="load" d="M6.7,34.5c-0.3,0-0.6-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l2.3-2.3c0.5-0.5,1.3-0.5,1.8,0c0.5,0.5,0.5,1.3,0,1.8l-2.3,2.3C7.4,34.4,7.1,34.5,6.7,34.5z"/><path class="load" d="M4.5,21.3H1.3C0.6,21.3,0,20.7,0,20s0.6-1.3,1.3-1.3h3.3c0.7,0,1.3,0.6,1.3,1.3S5.2,21.3,4.5,21.3z"/><path class="load" d="M9,10.3c-0.3,0-0.6-0.1-0.9-0.4L5.9,7.6c-0.5-0.5-0.5-1.3,0-1.8s1.3-0.5,1.8,0l2.3,2.3c0.5,0.5,0.5,1.3,0,1.8C9.7,10.2,9.4,10.3,9,10.3z"/><path class="load" d="M20,5.8c-0.7,0-1.3-0.6-1.3-1.3V1.3C18.8,0.6,19.3,0,20,0s1.3,0.6,1.3,1.3v3.3C21.3,5.2,20.7,5.8,20,5.8z"/><path class="load" d="M31,10.3c-0.3,0-0.6-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l2.3-2.3c0.5-0.5,1.3-0.5,1.8,0s0.5,1.3,0,1.8l-2.3,2.3C31.6,10.2,31.3,10.3,31,10.3z"/><path class="load" d="M38.8,21.3h-3.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3h3.3c0.7,0,1.3,0.6,1.3,1.3S39.4,21.3,38.8,21.3z"/><path class="load" d="M33.3,34.5c-0.3,0-0.6-0.1-0.9-0.4l-2.3-2.3c-0.5-0.5-0.5-1.3,0-1.8c0.5-0.5,1.3-0.5,1.8,0l2.3,2.3c0.5,0.5,0.5,1.3,0,1.8C33.9,34.4,33.6,34.5,33.3,34.5z"/><path d="M25,35v2.1c0,1.6-1.3,2.9-2.9,2.9h-4.2c-1.4,0-2.9-1.1-2.9-3.4V35H25z"/><path d="M27.4,10.9c-2.7-2.2-6.3-3.1-9.9-2.3c-4.4,0.9-8,4.5-8.9,8.9c-0.9,4.5,0.8,9,4.4,11.8c1,0.7,1.7,1.9,1.9,3.2v0c0,0,0.1,0,0.1,0h10c0,0,0,0,0.1,0v0c0.2-1.3,1-2.4,2.1-3.3c2.8-2.2,4.4-5.6,4.4-9.2C31.7,16.5,30.1,13.2,27.4,10.9z M26.3,20.8c-0.7,0-1.3-0.6-1.3-1.3c0-2.5-2-4.6-4.6-4.6c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3c3.9,0,7.1,3.2,7.1,7.1C27.5,20.3,26.9,20.8,26.3,20.8z"/></svg></a></li>
+	</ul>
+</header>
+
+<div id="wrap">
+<h1 class="site-title">吾不禁英俊地笑了起来</h1>
+
+<main>
+
+<h2 class="page-title">Devil May Cry</h2>
+<p class="page-subtitle">鬼泣</p>
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20200730">晚安</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2020-07-30</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				893
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>有时，人们主动忘记能将自己撕碎的回忆。</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20191225">魔界平安夜</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-12-25</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				359
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>兄弟俩有一万种战斗的理由。</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20191120">情念徒生</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-11-20</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				9926
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Explicit</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		<p>
+			译自 
+			<a rel="noopener noreferrer nofollow" target="_blank" href="https://archiveofourown.org/works/20124724">
+				<span itemprop="translationOfWork">Aphrodisia by Koreisai</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M30.1,28.9h-1.8c-0.5,0-0.9,0.5-0.9,0.9v6.5H8.9V17.9h8.3c0.5,0,0.9-0.5,0.9-0.9v-1.8c0-0.5-0.5-0.9-0.9-0.9H8c-1.5,0-2.8,1.3-2.8,2.8v20.3C5.2,38.7,6.5,40,8,40l0,0h20.3c1.5,0,2.8-1.3,2.8-2.8l0,0v-7.4C31.1,29.4,30.6,28.9,30.1,28.9z M33.4,10.5H26c-1.3,0-1.8,1.5-1,2.4L27,15L13,28.9c-0.6,0.6-0.6,1.4,0,2l0,0l1.3,1.3c0.6,0.6,1.4,0.6,2,0l0,0l14.2-13.9l2.1,2.1c0.9,0.9,2.3,0.2,2.3-1v-7.4C34.8,11.1,34.2,10.5,33.4,10.5z"/></svg>
+			</a></p>
+	</header>
+	<div itemprop="abstract">
+		<p>与主流观点（即但丁的朋友们）相反，维吉尔并不对人类怀有任何特殊恨意。</p>
+
+<p>曾经一度，他将人性视为自己的致命缺陷，软弱和失败的根源。如今他已能回过头来，毫无怨言地承认自己当时年轻愚蠢，自以为是，无法理解自身存在的复杂性。</p>
+
+<p>然而有时，他们仍会过度挑战他的耐心。</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>内含半公共场合限制行为。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20191115">Dream Deal</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-11-15</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				1126
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>有时人们梦到过去，有时以为自己梦到过去——这很难分辨。</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20191030">酒杯上一小片橙子听到的东西</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-10-30</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				949
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Teen+</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>几个月后，但丁携兄回归人界，而他的朋友们忽然都开始表现得很奇怪……</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>Past Dante/Trish &amp; Pre Dante/Vergil.</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20191025">The things my hungry heart has no use for.</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-10-25</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				12675
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>维吉尔不需要真诚的关心，正如但丁不需要无法实现的性幻想。</p>
+
+<p>（然而作者认为他们需要。）</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>内含触手、捆绑、尿道插入。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190815">当你弟弟在被炎上你儿子在哭而你在熬夜日更的时候你妈打电话来问你她孙子从哪儿来的</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-08-15</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				4590
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>马克·吐温曾经说过，成年人的故事写到结婚就可以了。这个故事自然也是如此。</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>其实是好久之前春梦太太想看“那种年轻小夫妻意外怀孕，个人问题都解决不好还要带娃的故事。有了娃之后吵架稍微大声一点娃都要大哭！一开始两个人还接着吵，后来娃的声音太大了，听不见对方在吵什么，就只好过去奶娃”（但写的完全是另一种东西）。总之是兄弟俩父母双全无灾无病正常长大（？）AU<span data-present="space"></span>的片段灭文法。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190810">Purgatorio (or Head or Tail)</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-08-10</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				1467
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Explicit</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>我找到你了——你找到我了。</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190805">溏心仙境</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-08-05</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				970
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>你哥的衬衫不是抹布！</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190720">Country Road Take Me Home</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-07-20</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				16045
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Explicit</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>大多数男人年轻时都幻想过与爱人一同公路旅行。为此，需要做很多很多准备。</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>又一篇人界蜜月吵架攻略。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190605">The Path Taken</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-06-05</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				2617
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>K for Keeper.</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>第一人称叙事。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190520">Two Can Play The Game</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-05-20</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				2923
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Explicit</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>兄弟俩找到了新的竞赛形式。</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>内含角色扮演。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190505">明月为鉴</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-05-05</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				3258
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>在可疑的月亮里<br />
+住着梦幻，不可企及者，<br />
+失去了的时间，可能之物<br />
+或不可能之物，两者是同一件事。</p>
+
+<p><cite>——博尔赫斯</cite></p>
+
+	</div>
+	<div itemprop="notes">
+		<p>M18-19。我，星际玩家兼青年设定发明家（但是有<span data-present="space"></span>bug）（祈祷没人看出来）（其实我不会写这个）。</p>
+
+<p>起因是镜子告诉我：你发现没有三代塔上既有月又有雨<br />
+我：？？？<br />
+我：没有，我剪了这么多<span data-present="space"></span>MV<span data-present="space"></span>都没意识到这个问题<br />
+我：我是星际玩家吗（是的）</p>
+
+<p>总之荣耀属于她，垃圾属于我，兄弟属于<span data-present="space"></span>C<span data-present="space"></span>社，但归根到底属于彼此。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190425">维吉尔觉得自己的刀疯了</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-04-25</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				782
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>某种超凡力量决定参与按头。</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>Post-M20，梗来自日配和英配的差异。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190420">Alcohol is a Solution (According to Chemistry)</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-04-20</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				4919
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>他们都觉得是自己在帮助对方。事实确实如此。</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>又一篇关于“你爸其实是你妈”的异端揣测（幸运的尼禄只知道可以被知道的那部分真相）。M-Preg<span data-present="space"></span>提及、Non-Con<span data-present="space"></span>提及。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190415">维吉尔之心</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-04-15</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				10113
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Explicit</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		<p>
+			译自 
+			<a rel="noopener noreferrer nofollow" target="_blank" href="https://archiveofourown.org/works/18179330">
+				<span itemprop="translationOfWork">Vergil’s Heart by ValkyrieShepard</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M30.1,28.9h-1.8c-0.5,0-0.9,0.5-0.9,0.9v6.5H8.9V17.9h8.3c0.5,0,0.9-0.5,0.9-0.9v-1.8c0-0.5-0.5-0.9-0.9-0.9H8c-1.5,0-2.8,1.3-2.8,2.8v20.3C5.2,38.7,6.5,40,8,40l0,0h20.3c1.5,0,2.8-1.3,2.8-2.8l0,0v-7.4C31.1,29.4,30.6,28.9,30.1,28.9z M33.4,10.5H26c-1.3,0-1.8,1.5-1,2.4L27,15L13,28.9c-0.6,0.6-0.6,1.4,0,2l0,0l1.3,1.3c0.6,0.6,1.4,0.6,2,0l0,0l14.2-13.9l2.1,2.1c0.9,0.9,2.3,0.2,2.3-1v-7.4C34.8,11.1,34.2,10.5,33.4,10.5z"/></svg>
+			</a></p>
+	</header>
+	<div itemprop="abstract">
+		<p>维吉尔和但丁关闭通往人界的入口之后被困在魔界。一念之间，V<span data-present="space"></span>又出现了。兄弟俩在短暂的休憩时间里变得更加亲密起来。</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190410">世界上所有的时间</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-04-10</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				11845
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Explicit</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>一日长于百年，拥抱无止无终。</p>
+
+<p><cite>——帕斯捷尔纳克</cite></p>
+
+	</div>
+	<div itemprop="notes">
+		<p>又一篇魔界蜜月旅游攻略。</p>
+
+<p>研究了半天魔人解剖学最后决定胡来，主要参考爬行类体征，因而含有较为过激的性内容（以及虽然过激但却不是很色），包括双性、真魔人、两根几把。（V：Welcome to the dark side. （串场</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20190320">Tears Inside Me</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-03-20</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				3402
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">General</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>热泪再灼人，也洗不净这些诗行。</p>
+
+	</div>
+	<div itemprop="notes">
+		<p>内含触手、轻度捆绑。</p>
+
+	</div>
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20111220">衔尾蛇</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2011-12-20</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				3442
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Teen+</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁</a>&nbsp;<a>维吉尔</a>&nbsp;</span>
+		</p>
+		<p>
+			译自 
+			<a rel="noopener noreferrer nofollow" target="_blank" href="https://www.deviantart.com/karaii/art/DMC-Uroboros-149116596">
+				<span itemprop="translationOfWork">Uroboros by Karaii</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M30.1,28.9h-1.8c-0.5,0-0.9,0.5-0.9,0.9v6.5H8.9V17.9h8.3c0.5,0,0.9-0.5,0.9-0.9v-1.8c0-0.5-0.5-0.9-0.9-0.9H8c-1.5,0-2.8,1.3-2.8,2.8v20.3C5.2,38.7,6.5,40,8,40l0,0h20.3c1.5,0,2.8-1.3,2.8-2.8l0,0v-7.4C31.1,29.4,30.6,28.9,30.1,28.9z M33.4,10.5H26c-1.3,0-1.8,1.5-1,2.4L27,15L13,28.9c-0.6,0.6-0.6,1.4,0,2l0,0l1.3,1.3c0.6,0.6,1.4,0.6,2,0l0,0l14.2-13.9l2.1,2.1c0.9,0.9,2.3,0.2,2.3-1v-7.4C34.8,11.1,34.2,10.5,33.4,10.5z"/></svg>
+			</a></p>
+	</header>
+	<div itemprop="abstract">
+		<p>维吉尔又被酒精打败了。</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20111120">恶魔的锁链</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2011-11-20</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				3730
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Mature</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		<p>
+			译自 
+			<span itemprop="translationOfWork">The Devil’s Chains by MarmaladeCat</span></p>
+	</header>
+	<div itemprop="abstract">
+		<p>维吉尔一次又一次重返魔界。他弟弟把他从徘徊中带回了家。</p>
+
+	</div>
+	
+
+</article>
+
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="/test/works/20111102">流水的妹子铁打的哥</a></h1>
+	
+	<header>
+		<p>
+			<time itemprop="datePublished">2011-11-02</time>
+			<span itemprop="wordCount" data-tooltip="字数统计">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				2718
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Teen+</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		
+	</header>
+	<div itemprop="abstract">
+		<p>为兄弟两肋插刀！</p>
+
+	</div>
+	
+
+</article>
+
+</main>
+
+
+<footer role="contentinfo">
+	<p>&copy; 2008 - 2020 fiammanda</p>
+	<p>Hosted on Github & Generated with Jekyll</p>
+</footer>
+
+</div>
+
+</body>
+</html>
+

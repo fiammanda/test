@@ -1,0 +1,35 @@
+
+title: The F Word
+name: 吾不禁英俊地笑了起来
+author: fiammanda
+avatar: /favicon.svg
+description: 这个没有味道的单词在你的舌尖溶解并且提供半天份量的毫无营养
+
+timezone: Asia/Shanghai
+permalink: /:categories/:year:month:day
+
+baseurl: /test
+
+page-size: 20
+page-size-float: 20.0
+
+excerpt-separator: <!-- more -->
+
+defaults:
+  - scope:
+      path: works/_posts/
+      type: posts
+    values:
+      category: works
+      layout: works
+      rating: Not Rated
+  - scope:
+      path: weblog/_posts
+      type: posts
+    values:
+      category: weblog
+      layout: weblog
+
+markdown: MDP
+
+disable_disk_cache: true

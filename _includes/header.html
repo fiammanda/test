@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>{{ page.title | default: site.title }} | {{ site.author }}</title>
+	<meta charset="utf-8" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="author" content="{{ site.author }}" />{% if page.excerpt %}
+	<meta name="description" content="{{ page.excerpt | strip | strip_html }}" />{% endif %}{% if page.tags.size > 0 %}
+	<meta name="keywords" content="{{ page.tags | join: ', '}}" />{% elsif page.fandom %}
+	<meta name="keywords" content="{{ page.fandom }}, {{ page.characters | join: ', '}}" />{% endif %}
+	<link rel="mask-icon" href="/favicon.svg" color="#666666">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.2.0/dist/av-min.js"></script>
+	<script src="{{ site.baseurl }}/assets/scripts.js"></script>
+</head>
+
+<body class="load" data-location="{{ page.layout }}">
+
+<a role="button" data-expand="header">
+	<span></span><span></span><span></span>
+</a>
+{% if page.content contains '<h2>' %}<a role="button" data-expand="nav"></a>{% endif %}
+
+<header role="banner">
+	<ul role="menu">
+		<li role="menuitem"><a class="internal" rel="home" href="{{ site.baseurl }}/">{{ site.name }}</a></li>
+		<li role="menuitem"><a class="internal" href="{{ site.baseurl }}/weblog/">日常<span>/Weblog</span></a></li>
+		<li role="menuitem"><a class="internal" href="{{ site.baseurl }}/widget/">工具<span>/Widget</span></a></li>
+		<li role="menuitem"><a class="internal" href="{{ site.baseurl }}/works/">更新<span>/Works</span></a><ul>
+			{%- for datum in site.data.works limit: 10 -%}{% if datum[1].show %}
+			<li><a class="internal" href="{{ site.baseurl }}/works/{{ datum[1].slug }}/">{{ datum[1].orig | default: datum[0] }}</a></li>
+			{%- endif -%}{%- endfor -%}
+		</ul></li>
+		<li role="menuitem"><a href="/search/" class="internal" rel="search">{{ site.data.svg['search'] }}</a></li>
+		<li role="menuitem"><a class="scheme">{{ site.data.svg['scheme'] }}</a></li>
+	</ul>
+</header>
+
+<div id="wrap">

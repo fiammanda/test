@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+	<article itemscope itemtype="https://schema.org/Article">
+		{% include meta.html %}
+		<section itemprop="articleBody">
+			{%- assign nodes = page.content | split: '<h2>' -%}
+			{%- if nodes.size > 1 -%}<nav>
+				<div role="directory">
+					{%- for node in nodes -%}
+					{%- if forloop.index > 1 -%}
+					<a>{{ node | split: '<' | first }}</a>
+					{%- endif -%}
+					{%- endfor -%}
+					<span data-present="bar"></span>
+				</div>
+			</nav>{% endif %}
+
+{{ content | replace_first: '<h1>', '<h1 itemprop="name">' | replace_first: '<p>END</p>', '<p data-present="end">END</p>' | replace: '›', '<span lang="en">’</span>' | replace: '<a href="http', '<a target="_blank" rel="noopener noreferrer nofollow" href="http' }}
+		</section>
+	</article>

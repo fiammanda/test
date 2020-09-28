@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- assign fandom = page.title | split: ' - ' | first -%}
+{%- assign relationship = page.title | split: ' - ' | last -%}
+
+<h2 class="page-title">{{ site.data.works[fandom].orig | default: fandom }}</h2>
+
+{%- for datum in site.data.works offset: 20 -%}
+	{%- if relationship == datum[0] or relationship == datum[1].ship or relationship == datum[1].abbr -%}
+{% assign characters = datum[0] %}
+<p class="page-subtitle">
+	<span>{{ datum[1].orig | default: datum[0] }}</span>
+	<span>{{ datum[1].ship }}</span>
+</p>
+{% break %}
+	{%- endif -%}
+{%- endfor -%}
+
+{%- for page in site.categories['works'] -%}
+{% if page.characters contains characters %}
+<article itemscope itemtype="https://schema.org/CreativeWork">
+	<h1 itemprop="name"><a class="internal" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+	{% include meta.html %}
+</article>
+{% endif %}
+{%- endfor -%}
