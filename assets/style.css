@@ -1313,7 +1313,7 @@ footer[role] p:last-child {
 }
 [data-scheme="dark"] [data-location="weblog-page"] article:not([itemscope]) nav[role] a:hover::before,
 [data-location="weblog-page"] article:not([itemscope]) nav[role] a.current:hover::before {
-	background: hsl(210, 20%, 30%);
+	background: hsl(210, 20%, 35%);
 }
 [data-location="weblog-page"] article:not([itemscope]) ul {
 	padding: 0;
