@@ -3,7 +3,7 @@ title: 片断灭文法
 fandom: 哈利波特
 characters: 卢修斯·马尔福/西弗勒斯·斯内普
 rating: General
-excerpt: 发生在平行世界的 OOC 的故事。（
+excerpt: 发生在平行世界的OOC的故事。（
 notes: 蛋疼的小段子集合，偶发性文艺狗血，内含各种让人觉得眼熟的梗。
 ---
 

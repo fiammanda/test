@@ -28,21 +28,49 @@ $(window).on('pageshow', function() {
 
 $(function() {
 
-	let expandH = $('header[role]')[0],
+	const cursor = $('<div data-present="cursor" />').appendTo('body');
+	//$('body').wrapInner('<div />').append(cursor);
+	$(window).on('mousemove', function(e) {
+		cursor.css({
+			top: e.clientY - 8,
+			left: e.clientX - 8
+		});
+	}).on('mouseleave', function() {
+		cursor.addClass('hidden');
+	}).on('mouseenter', function() {
+		cursor.removeClass('hidden');
+	}).on('mousedown', function() {
+		cursor.addClass('active');
+	}).on('mouseup', function() {
+		cursor.removeClass('active');
+	});
+	$('a, .footnotes + .footnotes li[role]').on('mouseenter', function() {
+		cursor.addClass('hover');
+	}).on('mouseleave', function() {
+		cursor.removeClass('hover');
+	});/*
+	$('header[role]').on('mouseenter', function() {
+		cursor.css('z-index', '1');
+	}).on('mouseleave', function() {
+		cursor.css('z-index', 'auto');
+	});*/
+
+	let expandA = $('a[data-expand]'),
+	    expandH = $('header[role]')[0],
 	    expandN = $('main article nav')[0];
 
 	$('a.internal').on('click', function(e) {
-		let href = this.href;
 		e.preventDefault();
+		let href = this.href;
 		$('body').removeAttr('data-expand').addClass('load');
 		setTimeout(function() {
 			document.location.href = href;
 		}, 250);
 	});
 	$('a[rel="home"], [data-location="home"] a.internal').on('click', function() {
-		$('body > a[data-expand]').addClass('load');
+		expandA.addClass('load');
 	});
-	$('body > a[data-expand]').on('click', function() {
+	expandA.on('click', function() {
 		let menu = this;
 		let name = menu.dataset.expand;
 		let node = name == 'header' ? expandH : expandN;
@@ -100,55 +128,50 @@ $(function() {
 	}
 
 	if ($('body').attr('data-location') == 'works') {
-
 		if ($('article nav').length) {
-			let headings = $('article section h2'),
-			         bar = $('article nav [data-present="bar"]');
+			let timeout = true, 
+			    headings = $('article section h2'),
+			    bar = $('article nav [data-present="bar"]');
+			tocHighlight(headings, bar);
 			$('article nav a').on('click', function() {
 				let target = $(headings[$(this).index()]).offset().top;
 				$('html, body').animate({ scrollTop: target - 50 }, Math.abs(window.scrollY - target)/50);
 			});
 			$(window).on('scroll', function() {
-				throttle(function() {
-					if (headings[0].getBoundingClientRect().top >= $(window).height()/1.5) {
-						bar.removeAttr('class style');
-					} else if ($('[data-present="end"]')[0].getBoundingClientRect().bottom <= 200) {
-						bar.css('top', headings.length * 1.75 + 'rem').removeAttr('class');
-					} else {
-						let i = headings.get().reverse().findIndex(function(heading) {
-							return heading.getBoundingClientRect().top < $(window).height()/2;
-						});
-						i = i < 0 ? 0 : headings.length - i - 1;
-						bar.css('top', i * 1.75 + 'rem').addClass('current');
-					}
-				}, 200);
+				if (!timeout) {
+					return;
+				}
+				timeout = false;
+				setTimeout(function() {
+					tocHighlight(headings, bar);
+					timeout = true;
+				}, 100);
 			});
 		}
-
 		if ($('.footnotes').length) {
 			$('.footnotes').clone().removeAttr('role').insertAfter('.footnotes').find('li[id]').removeAttr('id');
 			$('.footnote').on('click', function(e) {
 				e.preventDefault();
 				$(this).toggleClass('current');
-				$('.footnotes + .footnotes li[role]:nth-child(' + $(this).text() + ')').toggleClass('current').one('click', function() {
-					$('.footnote, .footnotes + .footnotes li[role]').removeClass('current');
-					$('main').off('click');
-				}).siblings().removeClass('current');
+				$('.footnotes + .footnotes li[role]:nth-child(' + $(this).text() + ')').toggleClass('current').siblings().removeClass('current');
+			});
+			$('.footnotes + .footnotes li[role]').on('click', function() {
+				$(this).removeClass('current');
 			});
 		}
-
 	}
-
 });
 
-let timeout = true,
-    throttle = function(callback, time) {
-	if (!timeout) {
-		return;
+function tocHighlight(headings, bar) {
+	if (headings[0].getBoundingClientRect().top >= $(window).height()/1.5) {
+		bar.removeAttr('class style');
+	} else if ($('[data-present="end"]')[0].getBoundingClientRect().bottom <= 200) {
+		bar.css('top', headings.length * 1.75 + 'rem').removeAttr('class');
+	} else {
+		let i = headings.get().reverse().findIndex(function(heading) {
+			return heading.getBoundingClientRect().top < $(window).height()/2;
+		});
+		i = i < 0 ? 0 : headings.length - i - 1;
+		bar.css('top', i * 1.75 + 'rem').addClass('current');
 	}
-	timeout = false;
-	setTimeout(function() {
-		callback();
-		timeout = true;
-	}, time);
 }

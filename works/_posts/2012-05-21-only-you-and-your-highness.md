@@ -3,7 +3,7 @@ title: 爱的路上只有你和你大爷
 fandom: 网球王子TV
 characters: 季步/钟国光
 rating: General
-excerpt: 根据流程，他们会在 S1 相见。
+excerpt: 根据流程，他们会在S1相见。
 ---
 
 # 爱的路上只有你和你大爷

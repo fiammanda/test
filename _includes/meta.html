@@ -2,7 +2,7 @@
 	<header>
 		<p>
 			<time itemprop="datePublished">{{ page.date | date: '%Y-%m-%d' }}</time>
-			<span itemprop="wordCount" data-tooltip="字数统计">
+			<span itemprop="wordCount"{% comment %} data-tooltip="字数统计"{% endcomment %}>
 				{{ site.data.svg['word'] }}
 				{{ page.content | number_of_words: 'cjk' }}
 			</span>{% comment %} Github Actions Needed {% endcomment %}

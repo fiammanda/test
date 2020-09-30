@@ -2,12 +2,16 @@
 layout: default
 ---
 
-<div role="img">{{ site.data.svg['logo'] }}</div>
-<h1 class="page-title">{{ site.title }}</h1>
-<p class="page-subtitle">{{ site.author }} / {{ site.name }}</p>
-<p>{{ site.description }}</p>
+<video playsinline autoplay muted loop poster="assets/poster.jpg">
+	<source src="polina.webm" type="video/webm">
+</video>
 
 <article>
+	<div role="img">{{ site.data.svg['logo'] }}</div>
+	<h1 class="page-title">{{ site.title }}</h1>
+	<p class="page-subtitle">{{ site.author }} / {{ site.name }}</p>
+	<p>{{ site.description }}</p>
+
 	<div>
 		<a class="internal" href="{{ site.baseurl }}/weblog/">日常/Weblog</a>
 	</div>
