@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>维吉尔之心 | fiammanda</title>
+	<meta charset="utf-8" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="author" content="fiammanda" />
+	<meta name="description" content="维吉尔和但丁关闭通往人界的入口之后被困在魔界。一念之间，V又出现了。兄弟俩在短暂的休憩时间里变得更加亲密起来。" />
+	<meta name="keywords" content="鬼泣, 但丁/维吉尔" />
+	<link rel="mask-icon" href="/favicon.svg" color="#666666">
+	<link rel="stylesheet" type="text/css" href="/test/assets/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.2.0/dist/av-min.js"></script>
+	<script src="/test/assets/scripts.js"></script>
+</head>
+
+<body class="load" data-location="works">
+
+<a role="button" data-expand="header">
+	<span></span><span></span><span></span>
+</a>
+
+
+<div id="wrap">
+
+<header role="banner">
+	<ul role="menu">
+		<li role="menuitem"><a class="internal" rel="home" href="/test/">吾不禁英俊地笑了起来</a></li>
+		<li role="menuitem"><a class="internal" href="/test/weblog/">日常<span>/Weblog</span></a></li>
+		<li role="menuitem"><a class="internal" href="/test/widget/">工具<span>/Widget</span></a></li>
+		<li role="menuitem"><a class="internal" href="/test/works/">更新<span>/Works</span></a><ul>
+			<li><a class="internal" href="/test/works/dmc/">Devil May Cry</a></li>
+			<li><a class="internal" href="/test/works/hakuoki/">薄桜鬼</a></li>
+			<li><a class="internal" href="/test/works/hp/">Harry Potter</a></li>
+			<li><a class="internal" href="/test/works/k/">K Project</a></li>
+			<li><a class="internal" href="/test/works/naruto/">ナルト</a></li>
+			<li><a class="internal" href="/test/works/pot/">テニスの王子様</a></li>
+			<li><a class="internal" href="/test/works/potc/">Pirates of the Caribbean</a></li>
+			<li><a class="internal" href="/test/works/wow/">World of Warcraft</a></li>
+			<li><a class="internal" href="/test/works/history/">历史衍生</a></li>
+			<li><a class="internal" href="/test/works/other/">其它</a></li></ul></li>
+		<li role="menuitem"><a href="/search/" class="internal" rel="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M17.2,34.2c-7.4,0-13.4-6-13.4-13.4s6-13.4,13.4-13.4s13.4,6,13.4,13.4S24.6,34.2,17.2,34.2L17.2,34.2z M17.2,10c-6,0-10.9,4.9-10.9,10.9s4.9,10.9,10.9,10.9S28,26.9,28,20.9S23.1,10,17.2,10L17.2,10z M35.8,39.6c0.5-0.5,0.5-1.3,0-1.8l-5.7-5.7c-0.5-0.5-1.3-0.5-1.8,0c-0.5,0.5-0.5,1.3,0,1.8l5.7,5.7c0.2,0.2,0.6,0.4,0.9,0.4C35.2,39.9,35.6,39.8,35.8,39.6z"/></svg></a></li>
+		<li role="menuitem"><a class="scheme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="load" d="M6.7,34.5c-0.3,0-0.6-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l2.3-2.3c0.5-0.5,1.3-0.5,1.8,0c0.5,0.5,0.5,1.3,0,1.8l-2.3,2.3C7.4,34.4,7.1,34.5,6.7,34.5z"/><path class="load" d="M4.5,21.3H1.3C0.6,21.3,0,20.7,0,20s0.6-1.3,1.3-1.3h3.3c0.7,0,1.3,0.6,1.3,1.3S5.2,21.3,4.5,21.3z"/><path class="load" d="M9,10.3c-0.3,0-0.6-0.1-0.9-0.4L5.9,7.6c-0.5-0.5-0.5-1.3,0-1.8s1.3-0.5,1.8,0l2.3,2.3c0.5,0.5,0.5,1.3,0,1.8C9.7,10.2,9.4,10.3,9,10.3z"/><path class="load" d="M20,5.8c-0.7,0-1.3-0.6-1.3-1.3V1.3C18.8,0.6,19.3,0,20,0s1.3,0.6,1.3,1.3v3.3C21.3,5.2,20.7,5.8,20,5.8z"/><path class="load" d="M31,10.3c-0.3,0-0.6-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l2.3-2.3c0.5-0.5,1.3-0.5,1.8,0s0.5,1.3,0,1.8l-2.3,2.3C31.6,10.2,31.3,10.3,31,10.3z"/><path class="load" d="M38.8,21.3h-3.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3h3.3c0.7,0,1.3,0.6,1.3,1.3S39.4,21.3,38.8,21.3z"/><path class="load" d="M33.3,34.5c-0.3,0-0.6-0.1-0.9-0.4l-2.3-2.3c-0.5-0.5-0.5-1.3,0-1.8c0.5-0.5,1.3-0.5,1.8,0l2.3,2.3c0.5,0.5,0.5,1.3,0,1.8C33.9,34.4,33.6,34.5,33.3,34.5z"/><path d="M25,35v2.1c0,1.6-1.3,2.9-2.9,2.9h-4.2c-1.4,0-2.9-1.1-2.9-3.4V35H25z"/><path d="M27.4,10.9c-2.7-2.2-6.3-3.1-9.9-2.3c-4.4,0.9-8,4.5-8.9,8.9c-0.9,4.5,0.8,9,4.4,11.8c1,0.7,1.7,1.9,1.9,3.2v0c0,0,0.1,0,0.1,0h10c0,0,0,0,0.1,0v0c0.2-1.3,1-2.4,2.1-3.3c2.8-2.2,4.4-5.6,4.4-9.2C31.7,16.5,30.1,13.2,27.4,10.9z M26.3,20.8c-0.7,0-1.3-0.6-1.3-1.3c0-2.5-2-4.6-4.6-4.6c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3c3.9,0,7.1,3.2,7.1,7.1C27.5,20.3,26.9,20.8,26.3,20.8z"/></svg></a></li>
+	</ul>
+</header>
+<h1 class="site-title">吾不禁英俊地笑了起来</h1>
+
+<main>
+	<article itemscope itemtype="https://schema.org/Article">
+		
+	<header>
+		<p>
+			<time itemprop="datePublished">2019-04-15</time>
+			<span itemprop="wordCount">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.5,20.6H4.9c-0.4,0-0.7,0.3-0.7,0.7v15.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7v-16C12.2,20.9,11.9,20.6,11.5,20.6z"/><path d="M23.4,6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v30.5c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V6.6C24.1,6.3,23.8,6,23.4,6z"/><path d="M35.4,12.6h-6.6c-0.4,0-0.7,0.3-0.7,0.7v23.9c0,0.4,0.3,0.7,0.7,0.7h6.6c0.4,0,0.7-0.3,0.7-0.7V13.3C36,12.9,35.7,12.6,35.4,12.6z"/></svg>
+				10113
+			</span>
+		</p>
+		<p>
+			<span itemprop="contentRating">Explicit</span>
+			<span itemprop="isBasedOn"><a class="internal" rel="tag" href="/test/works/dmc/">鬼泣</a></span>
+			<span itemprop="character"><a>但丁/维吉尔</a>&nbsp;</span>
+		</p>
+		<p>
+			译自 
+			<a rel="noopener noreferrer nofollow" target="_blank" href="https://archiveofourown.org/works/18179330">
+				<span itemprop="translationOfWork">Vergil’s Heart by ValkyrieShepard</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M30.1,28.9h-1.8c-0.5,0-0.9,0.5-0.9,0.9v6.5H8.9V17.9h8.3c0.5,0,0.9-0.5,0.9-0.9v-1.8c0-0.5-0.5-0.9-0.9-0.9H8c-1.5,0-2.8,1.3-2.8,2.8v20.3C5.2,38.7,6.5,40,8,40l0,0h20.3c1.5,0,2.8-1.3,2.8-2.8l0,0v-7.4C31.1,29.4,30.6,28.9,30.1,28.9z M33.4,10.5H26c-1.3,0-1.8,1.5-1,2.4L27,15L13,28.9c-0.6,0.6-0.6,1.4,0,2l0,0l1.3,1.3c0.6,0.6,1.4,0.6,2,0l0,0l14.2-13.9l2.1,2.1c0.9,0.9,2.3,0.2,2.3-1v-7.4C34.8,11.1,34.2,10.5,33.4,10.5z"/></svg>
+			</a></p>
+	</header>
+	<div itemprop="abstract">
+		<p>维吉尔和但丁关闭通往人界的入口之后被困在魔界。一念之间，V<span data-present="space"></span>又出现了。兄弟俩在短暂的休憩时间里变得更加亲密起来。</p>
+
+	</div>
+	
+
+		<section itemprop="articleBody">
+
+<h1 itemprop="name">维吉尔之心</h1>
+
+<p>最后几只恶魔倒下了。但丁收起魔剑，环顾身边的种种超现实景象。那么，这儿就是魔界了？Qliphoth<span data-present="space"></span>的遗址散落着兄弟俩诛戮的无数尸体，不过除此之外，连绵山丘遍生白草，无风自荡，虬曲断裂的树木结出色泽奇异的发光果实，恶紫重峦兀立于地平线上——这里以一种诡谲的方式美丽着。好吧，短期内他得好好适应了。尼禄觉得他们会被困在这里，不过既然维吉尔曾经成功回来过一次，他相信他们也能成功第二次。最好能少漏点儿恶魔到人界，如果能控制的话。</p>
+
+<p>他不是事先计划好事情的人，而他周围的事情似乎总能……自行解决。这次应该也能如此，不过同时他会花点儿时间探索一番，也许……呃。他已经开始讨厌这个想法了。但没错，也许可以和他哥哥谈谈。尼禄迈出了第一步，那孩子真的相信他们能够打破这个循环，可但丁并不十分确定。</p>
+
+<p>不过，只有一种方法可以得到答案。</p>
+
+<p>维吉尔立在离他不远的地方，刚刚回刀入鞘。尽管输给了自己的儿子，他的站姿依然骄傲优雅，一如往日。但丁很确定他在生闷气，而且已经用掉了不少借口。他计划周详，但还是被揍翻了。</p>
+
+<p>“喂，老哥，现在怎么办？”他喊道，维吉尔转过身，朝他缓步走来，“树砍了，门关了，人类得救了。而我们被困在这儿，那么……”</p>
+
+<p>“如果你想再打一场，我们应该先换个地点，离开这片混乱。”</p>
+
+<p>“嘿，我可不是那个一直找架打的人，”但丁用肩膀拱了拱他，维吉尔看他的眼神好像自己被蹭了一身泥，“我累了，安全地点听起来不错。”</p>
+
+<p>“跟我来。”维吉尔抬脚就走。<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>“对哦，你来过。”他小跑追了上去，然后放慢速度合上维吉尔的脚步，“有没有什么地方不全是恶魔的？”</p>
+
+<p>“有几个。”他答道，指向远处的群山，“最好走那条路。”</p>
+
+<p>“哦，拜托。”但丁发出一声哀鸣，“太远了吧……”</p>
+
+<p>“停止抱怨，行动起来。”维吉尔叹了口气。他已经多走了好几步。</p>
+
+<p>“好吧，好吧，行，现在我们有时间聊聊了，被自己的儿子打败是什么样的体验？”</p>
+
+<p>“我当时处于虚弱状态。”维吉尔说，“我愿意几天后让他再试一次。”</p>
+
+<p>“哦好吧。”但丁恼火地说。还是那个维吉尔，仿佛什么都没有变。“那你是真的要继续做这种事？”</p>
+
+<p>“什么意思？”</p>
+
+<p>维吉尔关注着周围情况，但丁则只在看他，他还没有把自己绊一跤也是挺神奇的了。维吉尔看起来还是那么不苟言笑，但丁试图在他身上寻找变化——任何可能发生改变的地方。一定有什么已经变了。</p>
+
+<p>“这一整套战斗啊追求力量啊什么的，你知道我在说什么。”他赶到维吉尔前面，手按在他肩上让他停下来。维吉尔看向他。“拜托，一次又一次地来这一套，我们永远得这样吗？”</p>
+
+<p>“这是我们的命运。”</p>
+
+<p>“呵全是胡说八道。命运可没逼你当个混蛋。”但丁叹了口气，双手环胸。他又要生气了，他在维吉尔身边就一直在生气，但这一次有所不同。V。</p>
+
+<p>V<span data-present="space"></span>是维吉尔。曾经是。他的脆弱，他的人性。他认识他的时间很短，但<span data-present="space"></span>V<span data-present="space"></span>仍然……仍然是维吉尔的一部分。</p>
+
+<p>“你知道我爱你，对吧？”但丁问他。</p>
+
+<p>他看到维吉尔睁大眼睛，接着突然转过身。但丁也发现了——几只恶魔偷偷接近了他们。维吉尔借此无视了他的话去料理它们，而但丁第一次看到他表现得没那么完美。</p>
+
+<p>但丁早就见惯他完美的身形和优雅的动作，如今对那些招式也已烂熟于心。尽管他的进攻仍是那么帅气或致命，但丁却发现他的重心不太正。然后他失去平衡，被一只低等恶魔击中了。</p>
+
+<p>“好吧好吧，我猜我会帮——”他看到维吉尔摔倒时打断了自己的话。然后他又看到一道光，维吉尔身形变幻。“我。操。”</p>
+
+<p>V。</p>
+
+<p>V<span data-present="space"></span>双膝发软几欲仆倒而另一只恶魔猛击向他之时，但丁反应过来了。鲜血从<span data-present="space"></span>V<span data-present="space"></span>身上喷涌而出，他赶到，将剩下那些玩意儿切成碎片。他终于能好好看看到底发生了什么见鬼的情况。</p>
+
+<p>他跪在地上，把<span data-present="space"></span>V<span data-present="space"></span>翻过来。活着。谢天谢地。</p>
+
+<p>“喂，喂，搞什么鬼？”他摇着<span data-present="space"></span>V<span data-present="space"></span>的肩膀喊道。V<span data-present="space"></span>的眼神渐渐聚焦在他身上。</p>
+
+<p>“但丁。”他睁大眼睛，然后陷入沉默。</p>
+
+<p>但丁还是能感觉得到。轻微的刺痛，代表附近更多恶魔的威胁。他轻声咒骂，抓着<span data-present="space"></span>V<span data-present="space"></span>的胳膊扶着他站起来，但他撑着手杖还是走得跌跌撞撞——阎魔和维吉尔一起消失了。但丁立刻抱着他跑了起来。</p>
+
+<p>V<span data-present="space"></span>攀在他怀中，手杖搭在腿上，就这么注视着但丁。</p>
+
+<p>“你哑了吗？”但丁问道，低头看了他一眼。还好他们之前稍作休息，现在他可以全速前进。那座山脉看起来没那么远了。</p>
+
+<p>“没——没有，只是有点混乱。”V<span data-present="space"></span>答道。</p>
+
+<p>“可不都是。”他喃喃地说。</p>
+
+<p>他们周围的景象急速变化，从先前长满异草的起伏山峦，到现在遍布不知玻璃还是水晶一般紫色条纹的光裸岩石。这座山本身并不像从远处看起来得那么平滑，反而十分崎岖，仿佛被一把巨大的梳子梳过，形成条条道路。但丁怀疑进山之后它会像座迷宫。</p>
+
+<p>“那边。”V<span data-present="space"></span>指向一道裂口，但丁没有其他参考，直接听从了他的指示。“现在往左。”</p>
+
+<p>不出所料，他们很快发现自己置身于一座石头迷宫，墙面凸起参差不齐，扯到了他的外套和<span data-present="space"></span>V<span data-present="space"></span>的头发。不过<span data-present="space"></span>V<span data-present="space"></span>似乎保留了维吉尔对这个地方的记忆，明确给出了方向，而但丁按他的话冲进了一座敞开的……火山口，差不多这样的东西。</p>
+
+<p>他在那儿站了一会儿，对这一突变有些瞠目结舌。这里有一口温泉，泉水冒着不透明的热气，空气里弥漫着某种馥郁甜香。附近的几棵树结着一种浓金色果实，也许就是香气的源头吧？他们左手边甚至有一块露出地面的岩石，正好可以当作一个小小的遮蓬——那是曾经有人利用过此处的痕迹。会是多年以前的维吉尔吗？</p>
+
+<p>“哇哦，这儿真不错。”但丁咧嘴一笑。他在温泉边把<span data-present="space"></span>V<span data-present="space"></span>放下。周围都是光滑的石块，不会再伤到他。“想泡一下吗？”</p>
+
+<p>“我，唔……”V<span data-present="space"></span>看着他脱衣服，声音低了下去。这并不是但丁第一次在兄长面前裸露身体，不过他本来也不会为此害羞。</p>
+
+<p>他滑入热水中，舒了一口气，终于可以丢开脏衣、放松一下紧张肌肉的感觉太好了。温泉边缘有岩台可坐，中间又深到能够游泳。他在水中浸了片刻，洗去头发上的血，然后游回把脚放进水里的<span data-present="space"></span>V<span data-present="space"></span>身边。</p>
+
+<p>但丁握住他的脚，轻轻搓掉上面的污迹。那双脚和维吉尔相比太纤巧了。然后他抚上<span data-present="space"></span>V<span data-present="space"></span>的腿，把裤子推高，想去看看他受的伤。现在只是一条细细的红线，情况似乎不太糟。</p>
+
+<p>“为什么你会出现？”但丁沉吟道。</p>
+
+<p>“我想是因为你说的那句话。”V<span data-present="space"></span>回答，“我不记得听你说过。”</p>
+
+<p>“我从来没有说过。”他叹了口气，“我早就该说了。我真的爱你，哥。”</p>
+
+<p>“喔，我现在可不比你大。”V<span data-present="space"></span>低下头，对但丁微微一笑。</p>
+
+<p>但丁从水里跃出来，贴近了他。他坏笑着拉低<span data-present="space"></span>V<span data-present="space"></span>的背心，扯开那件不知道算紧身衣还是别的什么的细绳。看起来真性感，他想。</p>
+
+<p>“一起下来吧。”但丁说着凑近了偷亲他一口，“我喜欢你的这一面。终于能听听你的真实想法了。”</p>
+
+<p>“噢，我敢肯定之后自己不会对此太高兴的。”V<span data-present="space"></span>答道，但还是开始脱衣服了。他动作很慢，但丁能看出他的虚弱。对他来说一切似乎都很困难，所以但丁扶着他滑进温泉。V<span data-present="space"></span>不禁叹息出声，听起来简直……色情。他真美。</p>
+
+<p>“感觉如何？”但丁问道，又伸出手仔细检查他身上的伤口。V<span data-present="space"></span>稍稍缩了一下。</p>
+
+<p>“没……没比我回归维吉尔之前那么糟。这种感觉很奇怪。我不能再召唤恶魔了，我感觉好多了，但是……”</p>
+
+<p>“但是？“</p>
+
+<p>“我不知道自己为什么还在。”</p>
+
+<p>“哈。”但丁脱口而出，“这次轮到我当明白人了。”</p>
+
+<p>“那请教导我吧。”V<span data-present="space"></span>的微笑有些嘲弄，非常性感。但丁缓缓靠近他。</p>
+
+<p>“肯定是因为见到尼禄让你很受震动。输给他也是。你想要被人亲近，你想要爱。现在我明白了。而我本该是给你这些的人。我以前……”他叹了口气，“以前有点混蛋，可能现在也是。成熟从来不是我们的强项。但我相信我们可以改。”</p>
+
+<p>“我确实想要。”V<span data-present="space"></span>柔声说。但丁忍不住伸出手捧住他的脸，V<span data-present="space"></span>像猫咪一样蹭了蹭他的掌心。“我爱你，但丁。我相信自己以前就想从你口中听到这句话。还有母亲，虽然现在有点晚了。”</p>
+
+<p>“她确实爱你。”但丁坚持道，“她害怕失去你。”</p>
+
+<p>V<span data-present="space"></span>低下头，可但丁仍能看到他眼中的泪光。维吉尔从未哭过，不管因为疼痛或其它原因。他开始相信维吉尔需要<span data-present="space"></span>V，需要让这一切有个出口。V<span data-present="space"></span>就是他们改变的契机。</p>
+
+<p>“我知道上一次有点粗暴……”但丁越说越轻，手却游移得更远。他以指尖追溯那些魔纹的线条，好奇它们是不是代表什么含义，“我不会再这样对你了。”</p>
+
+<p>“我还有件事要告诉你。”V<span data-present="space"></span>的呼吸急促起来。或许他也想起了他们最后一次做爱的情景。这是很多年前的事了，可但丁时常回忆。</p>
+
+<p>他看到<span data-present="space"></span>V<span data-present="space"></span>深深地吸了一口气。风忽然拂过异树，几片白叶落在水面和<span data-present="space"></span>V<span data-present="space"></span>的头发上。但丁没有把它们摘走。</p>
+
+<p>“你也是尼禄的父亲。”V<span data-present="space"></span>接着说。</p>
+
+<p>但丁蹙眉笑了一声。他歪了歪头，又皱起眉，脸在极短时间里经历了一系列情绪变化。V<span data-present="space"></span>注视着他的眼睛，在寻找……什么？</p>
+
+<p>“你是认真的吗？”但丁又笑了一声，更多因为紧张而非觉得有趣。</p>
+
+<p>“我是。我携带了一段时间他的……本源。然后他突然出现了。我把他送走，忘记这件事，因为……坦白地说，我不知道该怎么处理。”</p>
+
+<p>“这可真是让人发软，你懂的。”</p>
+
+<p>轮到<span data-present="space"></span>V<span data-present="space"></span>笑了。但丁现在才发现自己爱这个声音。他笑的时候，低沉的声音变得轻快了些，头发也随之晃动。但丁现在不太能发的了火。他只是真的、真的非常困惑。</p>
+
+<p>“你有没有，呃……肚子？”他比了个怀孕的形状。</p>
+
+<p>“没有，没有发生那种情况。”V<span data-present="space"></span>解释道，“他只是……在那里。”</p>
+
+<p>“哦，天哪……”但丁往后一躺，头靠在池边，然后在水里潜了几分钟。所以不是叔叔。他是父亲。这些年他一直觉得迟早会发生这样的事，只是从未想过会是自己的哥哥。</p>
+
+<p>他终于浮出水面。V<span data-present="space"></span>关切地看着他。</p>
+
+<p>“好吧，老实说，”但丁说，“这倒也不算我身上发生过的最奇怪的事。”</p>
+
+<p>“是吗？”V<span data-present="space"></span>问。他坐得离他更近了些，现在几乎要碰到彼此了。但丁立刻捉住他的手放在自己胸口。如果<span data-present="space"></span>V<span data-present="space"></span>想要碰他，他就应该碰他。</p>
+
+<p>“我是觉得，既然已经这样，那么……”他耸耸肩，“等我们离开这里，就该去和他谈谈。他是个好孩子，V。”</p>
+
+<p>“你这么觉得吗？”</p>
+
+<p>但丁转过来细细看他，他的手——如此脆弱——一动不动地贴着他的胸口。V<span data-present="space"></span>愿意对他表达很多东西，仿佛一本打开的书。</p>
+
+<p>“他很不错，因为是你的儿子，V。你知道的，他有多自大，我早该知道……”</p>
+
+<p>V<span data-present="space"></span>再次露出了可爱的微笑。他靠得更近了。近到几乎可以接吻。</p>
+
+<p>“我希望他也继承了你那颗善良的心。”他说。</p>
+
+<p>“哇。哇我真的——维吉尔永远不会说这种话。等不及要拿来逗他了。”但丁坏笑着说。会很有趣的。等维吉尔回来的时候。</p>
+
+<p>他握住<span data-present="space"></span>V<span data-present="space"></span>的大腿，把他拉到自己膝上。V<span data-present="space"></span>呼吸一窒。但丁笑了。V<span data-present="space"></span>似乎比记忆里他哥哥敏感得多。这一次，他将细细品味。这一次，他将慢慢推进。不会再和上回一样。所有这些年之前的最后那次见面，他们伤痕累累，鲜血淋漓，终于屈服于长久以来两人之间的张力。但丁上了他。粗暴，没有顾及他的感受。他们怀着同等的怒火和爱意。</p>
+
+<p>现在<span data-present="space"></span>V<span data-present="space"></span>坐在他的腿上。但丁的手滑过他优雅的脊背，停在目前为止一直没有机会享用的可爱屁股上。</p>
+
+<p>“我在想，你会不会和他喜好一样。”但丁沉吟着扫视面前这具全新的身体，眼神中无限渴望。</p>
+
+<p>“我就是他。”V<span data-present="space"></span>喘着气，但丁捏住他的屁股时他“噢”了一声。</p>
+
+<p>“怎么了？”V<span data-present="space"></span>咬住下嘴唇，但丁立刻放开手，“弄痛你了吗？“</p>
+
+<p>V<span data-present="space"></span>沉默片刻，但丁又催促了他一次。他把手举到空中，水一滴滴流下来，以示在确定<span data-present="space"></span>V<span data-present="space"></span>没有受伤之前绝不做任何事。</p>
+
+<p>“是这具身体，”V<span data-present="space"></span>最后承认，“不能承受你的力量。你最近有跟人类在一起过吗？”</p>
+
+<p>“唔。”他揉了揉自己的下巴，摸到了胡茬，“要说这个的话，大多数都不完全算人类，我估计。现在开始我会控制力气的。”</p>
+
+<p>他伸出手。V<span data-present="space"></span>僵了片刻，但他只是用手指背面拂过他的脸颊，尽他所能地小心翼翼。这是他最温柔的爱抚，而<span data-present="space"></span>V，唉，可爱的<span data-present="space"></span>V，叹了口气，阖上眼睛。</p>
+
+<p>所以，计划有变。缓慢的爱，他能做到的。他不经常这样，也许从来没有过……？但丁太不确定，但如果说他要为谁这么做，那一定就是<span data-present="space"></span>V。他看起来那么脆弱，那么需要爱。他想把一切都给他。</p>
+
+<p>他开始摩挲<span data-present="space"></span>V<span data-present="space"></span>的下巴，没有摸到胡茬和体毛。然后纹身从脖子上开始蔓延。他描过那些图案，一边仔细观察。有些就是精致的线条，如同烟雾蚀刻在皮肤上。但丁觉得自己能看懂它们的含义——那是一个关于失去和渴求、关于无数梦魇却仍存一线希望的故事。他记得原先绘着黑豹和飞鸟的地方现在空了，但随着他的触碰，墨色开始流转。</p>
+
+<p>“你要不要看一眼。”他喃喃道。V<span data-present="space"></span>低下头，看向自己的身体。</p>
+
+<p>但丁在他的皮肤上划动，墨色跟上他的指尖。他好奇地画了个圈，魔纹也形成一个圈，但没有固定下来，而是变成了别的形状。他不太清楚为何如此，但靠了过去，在那片空白上落下一个羽毛似的轻吻。V<span data-present="space"></span>发出一些……最细小的声音——最柔软的呻吟。但丁抬起头，以同样的方式吻上他美丽的嘴唇。他后退时，V<span data-present="space"></span>有那么一刻忍不住追了上去。</p>
+
+<p>“一颗心。”V<span data-present="space"></span>看着新的图案告诉他。不是但丁在可怕情人节贺卡上见过的那种俗气的心，而是解剖学上的形态，不过和他的其它纹身一样风格抽象。“我终于明白我也有一颗。”</p>
+
+<p>“听起来很烂俗。”但丁告诉他，V<span data-present="space"></span>不由微笑起来，“但我觉得我现在真的想继续吻你。”</p>
+
+<p>但丁捧住他的脸，手指拨弄着松散蜷曲的黑发。V<span data-present="space"></span>点了点头，他便再一次贴过来。他很在意自己的身体，自己当下用的力气，几乎没有压上<span data-present="space"></span>V<span data-present="space"></span>的皮肤，嘴唇也没有碰到对方。这慢慢成为一个真正的吻，而不只是双唇一触。是<span data-present="space"></span>V<span data-present="space"></span>抓住了但丁的胳膊，也是他轻启嘴唇，邀他深入。</p>
+
+<p>“我希望有一张床，能带你上去。”但丁贴着他的嘴唇低语，“我拥有的不多，但它们现在都是你的了，V。”</p>
+
+<p>“这就够了。你就够了。”</p>
+
+<p>但丁注视着<span data-present="space"></span>V<span data-present="space"></span>的双眼，伸手握住他的阴茎，毫不意外地发现比维吉尔要小。V<span data-present="space"></span>的一切都更小，更脆弱，非常美丽。与他所熟知的兄长的美不同的一种，却那么使人着迷。他再次只用一根手指轻抚<span data-present="space"></span>V<span data-present="space"></span>的性器，小心不去弄痛他。</p>
+
+<p>他欣赏着<span data-present="space"></span>V<span data-present="space"></span>全心关注自己，同时轻启双唇，泄露出更响、更加肉欲的呻吟。</p>
+
+<p>“没有弄痛你吧？”但丁以指尖掠过他的顶端时问道。</p>
+
+<p>“没——没有。”他喘着气，“我不会坏的，但丁。”</p>
+
+<p>“也许不会。”他说着又吻了<span data-present="space"></span>V<span data-present="space"></span>一次，然后谨慎地握住他的阴茎，“但我不想伤到你。我不是那种人。”</p>
+
+<p>“我相信你。”V<span data-present="space"></span>说，“完全相信。”</p>
+
+<p>他脑中的某一部分想提醒<span data-present="space"></span>V，那可能是极其糟糕的主意。他反复无常，不够成熟，可是经历了所有这些以后……他也想以这样的方式信任<span data-present="space"></span>V——信任维吉尔。</p>
+
+<p>他小心地控制力度，另一只手滑过<span data-present="space"></span>V<span data-present="space"></span>的腰胯，爱抚他的大腿。透过水面他也看到了纹身，那些扭曲过的形状。他知道自己迟早会去探索它们的每一寸。等他们回家、彻底安全的时候，他要和<span data-present="space"></span>V<span data-present="space"></span>还有维吉尔做上好几个小时。</p>
+
+<p>“你觉得除了这个方便的安全地点，魔界会不会也有方便的润滑？”但丁问道，叫<span data-present="space"></span>V<span data-present="space"></span>轻笑起来。</p>
+
+<p>“不。”他说着吻了吻他的鼻尖，“我不要紧的，但丁。”</p>
+
+<p>“你确定？”但丁的手又搭上他的大腿，抚过他的臀部，甚至开始揉弄那个入口，“你以前做过吗？“</p>
+
+<p>“没有。也可以说有。维吉尔有。理论上来说，我……没有。”</p>
+
+<p>“所以你不知道你的身体会有什么反应。”</p>
+
+<p>“是的。”V<span data-present="space"></span>微笑着靠近他，双手搭在他肩上，滑到脸旁拨弄他的头发，“但我期待知道答案。”</p>
+
+<p>“我真的很喜欢你的这一面。”但丁轻笑着亲吻他的喉咙。他简直要迷失在<span data-present="space"></span>V<span data-present="space"></span>发出的呜咽和呻吟里。他非常希望这个地方有看上去的那么安全。</p>
+
+<p>他小心地探入一根手指，而<span data-present="space"></span>V<span data-present="space"></span>紧紧搂着他。他动作极慢，好能在听到<span data-present="space"></span>V<span data-present="space"></span>发出任何痛苦的声音时及时停手，但他的耳朵只能感到颤抖的呼吸，听到甜蜜的呻吟，这让他的下身有了立竿见影的反应。V<span data-present="space"></span>的身体贴着他，他能判断自己做得完全没错。V<span data-present="space"></span>的呻吟几乎高出八度时，他又笑了。</p>
+
+<p>“这就对了。”他说，“看，我还没忘人类的情况。”</p>
+
+<p>“你——你做的，”V<span data-present="space"></span>的声音颤抖，但丁还在欺负他的前列腺，“啊但丁，哦，我不能，啊——”</p>
+
+<p>“抱着我。”但丁说。他揽住<span data-present="space"></span>V<span data-present="space"></span>的腰，让他稳稳地靠在自己胸前，“这就行了，抱着我，放松。”</p>
+
+<p>“我想念这个。”V<span data-present="space"></span>轻声道。他往后退了一点，直视但丁的眼睛，“我想念你。”</p>
+
+<p>“我也是。”但丁贴着他的皮肤低喃。他用舌尖描画那些刺青，然后再次吻他。他又加了一根手指，不过在真正插入之前给<span data-present="space"></span>V<span data-present="space"></span>留出放松的时间。</p>
+
+<p>尽管在水里，V<span data-present="space"></span>还是很难坐直。但丁发现他的大腿正在发抖，也没有自己希望的那么放松。他立刻把<span data-present="space"></span>V<span data-present="space"></span>抱出来，尽量轻柔地把他放在自己摊开的外套上，享受着他脸上惊讶的表情。水边的空气仍然温暖，但丁唤出一点恶魔之力，维持在即将变身的边缘。他升高了自己的体温，让<span data-present="space"></span>V<span data-present="space"></span>别着凉。</p>
+
+<p>“哦天哪。”V<span data-present="space"></span>喘息着，“你的眼睛。”</p>
+
+<p>他伸手捧住但丁的脸轻轻抚摸，像但丁对他做的那样温柔。</p>
+
+<p>“我不变身，我保证。”但丁说，“只是想让你暖和。”</p>
+
+<p>“但是也许你可以。”V<span data-present="space"></span>稍稍弓起身子。</p>
+
+<p>操。这混蛋很清楚自己在做什么。</p>
+
+<p>但丁吞咽了一下，看着身下优美的肉体。他很纤细，很瘦，几乎太瘦了，但丁在想一回办公室就点份披萨。但他性感得要命，那对玫瑰色的乳头正在祈求被吮吸。</p>
+
+<p>“不想伤到你。”他贴着仍然湿润的皮肤低语。他轻舔<span data-present="space"></span>V<span data-present="space"></span>的乳尖。泉水带着轻微的硫酸味，V<span data-present="space"></span>在他的舌下颤抖。</p>
+
+<p>“你不会。你保证过了。”V<span data-present="space"></span>的声音更轻了。他透过低垂的睫毛注视但丁。作为一个只有几天大的人，V<span data-present="space"></span>过于擅长这种事了。“我想要你的真实形态。我想要感受你的力量。”</p>
+
+<p>“如果我太大了怎么办？”但丁撑起自己，朝下方的<span data-present="space"></span>V<span data-present="space"></span>笑了笑。他又把一根手指埋入<span data-present="space"></span>V<span data-present="space"></span>的身体，逗弄那个敏感之处，引出一些叫人心满意足的呻吟。“你想我想得不行。”</p>
+
+<p>“我是。”V<span data-present="space"></span>承认。他急切地寻找可以抓握的地方，最后攥住但丁的头发，“请你，但丁。请给我看。给我看真正的你的爱。”</p>
+
+<p>V<span data-present="space"></span>对他做了什么。不仅是他的声音，他因为体内手指颤抖的样子，也不只是他把但丁拉进的甜蜜的吻——不，还有些别的。他的头发上出现了道道雪痕，仿佛被隐形画笔刷过一般，在柔软青丝上蔓延开来。能量在他的指尖噼啪作响，钻进但丁体内，激起了深处的某种东西。他召唤的热量在他身体中变得庞大。他变身前几乎来不及坐起来与<span data-present="space"></span>V<span data-present="space"></span>拉开距离，差点压到他。</p>
+
+<p>“该死。”但丁说道，他的声音显得更加低沉，更加非人，“我不知道你能这样。”</p>
+
+<p>“我也不知道。”V<span data-present="space"></span>欣赏着上方但丁的魔人形态，“你真美。”</p>
+
+<p>“花言巧语。”但丁轻笑俯身，爪子轻轻抬起<span data-present="space"></span>V<span data-present="space"></span>的大腿。他观察着<span data-present="space"></span>V<span data-present="space"></span>的反应，小心不让爪尖刺得太深。</p>
+
+<p>他几乎能听到<span data-present="space"></span>V<span data-present="space"></span>的心跳，感到血液流经他的血管。但丁其实有些紧张。他还是变身了。他承诺过不弄伤<span data-present="space"></span>V，不弄痛<span data-present="space"></span>V，他必须信守诺言。他比之前更加小心地抬起<span data-present="space"></span>V，然后俯身把长长的舌头压上他的入口。</p>
+
+<p>他听到了一声呜咽似的低吟，把自己的舌头推了进去。他从来没有以魔人形态操过别人，惟恐伤到对方，而且这感觉太亲密了。他的兄长是唯一一个与他分享这种经历的人。</p>
+
+<p>“天哪。”V<span data-present="space"></span>呻吟着扯住自己的头发，因为眼下但丁已经没有这种体征了。他的舌头越钻越深，在内壁涂满唾液，舌上凸起撑开了甬道。“天哪，天哪，但丁——”</p>
+
+<p>V<span data-present="space"></span>再也说不下去，只能发出呻吟和呜咽，最后捂着嘴试图安静下来。鉴于但丁想听到更多他的声音，这或许是个明智的决定。</p>
+
+<p>但丁抽出舌头，唾液几乎淌了<span data-present="space"></span>V<span data-present="space"></span>一身。他把<span data-present="space"></span>V<span data-present="space"></span>轻轻放下时，他的后穴也滴出水来。V<span data-present="space"></span>的魔纹正在缓缓流转，他想要爱抚和舔舐和亲吻那美丽身躯的每一寸。他的爪子从<span data-present="space"></span>V<span data-present="space"></span>的胸腹往上游移，直到再一次用手指背面轻抚他的脸庞。可爱的<span data-present="space"></span>V。他的<span data-present="space"></span>V。</p>
+
+<p>V<span data-present="space"></span>苍白的双颊微微泛红，但丁忍不住微笑，又有些担心魔人笑起来会不会吓人，而<span data-present="space"></span>V<span data-present="space"></span>回以一笑，伸手把他拉得更近。魔人鬼翼笼罩两人，守护这珍贵的一刻。</p>
+
+<p>“你搞得我太兴奋了。”但丁呻吟着，俯身去舔<span data-present="space"></span>V<span data-present="space"></span>的脖子。他想咬他，占有他，但尽力忍住了。“不论是这个形态还是另一个，我都想——”</p>
+
+<p>他紧握<span data-present="space"></span>V<span data-present="space"></span>的手腕固定在头上，然后又松开，生怕伤到他。温柔很难，但他必须温柔，他提醒自己。V<span data-present="space"></span>只是个人类。</p>
+
+<p>“享用我。”V<span data-present="space"></span>声音低沉。但丁看到他把腿张得更开。“让我成为你的。”</p>
+
+<p>“你已经是了。”但丁轻声说着，又俯下身来露出牙齿。他离<span data-present="space"></span>V<span data-present="space"></span>的脖子那么近。不，不可以。利齿压在柔软的血肉上，但他绝不用力。他在咬下前撤了回来。“关于命运你没有错。我们注定要在一起。”</p>
+
+<p>V<span data-present="space"></span>仰头对他微笑，用那双脆弱的手触碰他的身体，那脆弱的心温暖了他的心。这就是转折点，他想。即使<span data-present="space"></span>V<span data-present="space"></span>就此消失，维吉尔和他自己也已经改变。</p>
+
+<p>他稍稍用力，终于埋入<span data-present="space"></span>V<span data-present="space"></span>的体内。</p>
+
+<p>魔人化时他更大了。他的阴茎更硬，布满脊状隆起。他有些担心，然后看到了<span data-present="space"></span>V<span data-present="space"></span>的表情——纯然的极乐。恶魔唾液作为润滑还算不错，他能感到自己把<span data-present="space"></span>V<span data-present="space"></span>撑开了。炙热的紧致夺去了他每一丝意志力，现在他只想用力干他。</p>
+
+<p>他一手放上<span data-present="space"></span>V<span data-present="space"></span>的喉咙，又舔了那儿一下，在里面多停了一会儿，让<span data-present="space"></span>V<span data-present="space"></span>适应自己。更重要的是让他也适应这种感觉，不至于被内心的恶魔完全操纵。</p>
+
+<p>V<span data-present="space"></span>喘息着，又在但丁的阴茎缓缓拔出来时呜咽起来。那些隆起，它们的硬度带来不可思议的感受，对这个脆弱的人类将会是多么剧烈。但应该没有造成伤害。V<span data-present="space"></span>似乎沉浸在快感中，他抓着自己的头发，抠着身下的地面。</p>
+
+<p>但丁慎重地抱起他，小心没让爪尖扎进柔软的皮肤。V<span data-present="space"></span>看起来有些惊讶，但丁让他坐上自己阴茎之后，他很快又呻吟起来。</p>
+
+<p>“完美。”但丁喃喃着，鼻尖压上<span data-present="space"></span>V<span data-present="space"></span>的白发。他很难组织语言，很难保持其它理智的想法，除了要对<span data-present="space"></span>V<span data-present="space"></span>足够温柔。</p>
+
+<p>“但丁……”V<span data-present="space"></span>声音低沉，微微颤抖，毫无惧色地伸手抚摩魔人面颊，“我爱你。我觉得自己要爆炸了。”</p>
+
+<p>“那只是我的屌。”但丁答道。他们都笑了起来。</p>
+
+<p>“一如既往地能说——”他的话被温柔一撞打断了，他呻吟起来，舒服得双目失神。</p>
+
+<p>力量的差距让但丁轻易取得完全的控制。他把<span data-present="space"></span>V<span data-present="space"></span>几乎抱离自己的阴茎，又缓缓放下去，漫长又甜蜜，正如他承诺的那样。他看着<span data-present="space"></span>V<span data-present="space"></span>屈服于快感，感到热意也正于自己体内攀升。</p>
+
+<p>他爱看<span data-present="space"></span>V<span data-present="space"></span>这样，在他温柔而坚定的掌下扭动，爱看他发出长长的呻吟高潮，弄脏他们的小腹。但丁把他抱得更高，可<span data-present="space"></span>V<span data-present="space"></span>忽然僵住，看了他一眼。</p>
+
+<p>“继续。”他喘息着说。</p>
+
+<p>“你确定吗？“但丁问道，用鼻子轻蹭他可爱的人类兄长。</p>
+
+<p>“对，我确定，我能承受。”</p>
+
+<p>但丁把<span data-present="space"></span>V<span data-present="space"></span>按回阴茎上时，那柔软而动听的啜泣几乎足以让他也登上顶峰。他看着自己的性器进出<span data-present="space"></span>V<span data-present="space"></span>的身体，感受他颤抖着收缩的甬道，直到高潮终于降临，他把<span data-present="space"></span>V<span data-present="space"></span>紧紧搂在胸口，待它平息。V<span data-present="space"></span>轻轻环住他，安慰似的拍拍他的背，他忍不住微笑起来。</p>
+
+<p>V<span data-present="space"></span>头发上的白色颜料一般滴落下来，但丁也感到维持魔人化的力量消失了。现在<span data-present="space"></span>V<span data-present="space"></span>坐在他腿上，被他搂在怀中，两人享受着性事的余韵。魔纹再次平静下来。但丁描摹着那些线条，感到心中熨帖。V<span data-present="space"></span>显然也有同样感受，发出舒适的轻哼。</p>
+
+<p>“你在里面的感觉很好。”V<span data-present="space"></span>贴着他的耳廓低语，轻咬他的耳垂。</p>
+
+<p>“你这是想让我再操你一次。”</p>
+
+<p>“也许我并不介意。”V<span data-present="space"></span>坏笑着回答。</p>
+
+<p>但丁呵他的痒痒，把他们俩翻了个身，然后做了第二回，一天以后第三次。V<span data-present="space"></span>又留了一会儿，他们用这段时间更加亲近彼此。但丁醒来时，维吉尔背对着他睡在他身边——他甚至没有试图谋杀亲弟。好吧，反正没有立刻试图。</p>
+
+<p>维吉尔强大到能够对抗恶魔，于是他们再次出发。他带但丁来到接近人界地方，以阎魔短暂地划开空间。但丁非常庆幸这把刀从未落入恶魔手中。</p>
+
+<p>但是，迟早有东西会想卷土重来。不过至少这意味着他还能接到工作，可以交上电费。他们到家时，屋里没有光。他拨动开关，照亮了一团混乱。</p>
+
+<p>“哎，我本来指望这地方能自动打扫干净的。”但丁叹了口气走向写字台，靴子在积灰上留下了脚印。</p>
+
+<p>“你是怎么活下来的？”维吉尔抹了抹搁板，留下一道痕迹。他皱起鼻子。</p>
+
+<p>“简单，就像这样。”他站在那儿微笑。维吉尔翻了个白眼。</p>
+
+<p>“我猜我得负责打扫了……”</p>
+
+<p>然后维吉尔真的开始了。开始打扫。但丁为这梦境般的景象瞠目结舌。</p>
+
+<p>“等等，这是不是说你会留下来？”他问，“跟我一起？”</p>
+
+<p>“我还能去哪儿？”维吉尔在肮脏的厨房里翻找——甚至没有看他一眼——竟然真的被他找到一个垃圾袋。他板着脸开始往里面扔所有拿得起来的东西。</p>
+
+<p>“嘿，嘿，等等！”但丁从他手里接过袋子，假装没看到另一个白眼，“我知道你不擅长表达感情——”</p>
+
+<p>“而我发现你不擅长说人话。”维吉尔打断了他，不过但丁继续假装没听到。</p>
+
+<p>“但是，我很高兴。维吉尔，我很高兴你能留下来。我要帮你一起打扫。”</p>
+
+<p>维吉尔双手环胸望向别处，又慢慢转过来瞥了弟弟一眼。但丁趁机亲了他的脸。他握住维吉尔的一只手时，他甚至没有拒绝。</p>
+
+<p>“我是认真的。”但丁接着道，“好吧，大多数时候都很认真。我们还得谈谈，你知道的，关于尼禄。”</p>
+
+<p>维吉尔僵住了。但丁握住了他的另一只手。他人生中，第一次，靠在但丁身上。</p>
+
+<p>“我不认为他会想和我扯上任何关系。”他说。</p>
+
+<p>“问之前我们可没法得到答案。而且他有权知道，我是说，关于我。”但丁吞了口口水，“我们要怎么告诉他其实他是恶魔乱伦生下来的？”</p>
+
+<p>“告诉他恶魔不在乎人类道德。” 维吉尔答道，“虽然我相信以他的成长过程，他会很难接受。让他理解是不现实的。”</p>
+
+<p>“他是个好孩子，维吉尔。”但丁温柔地说，“别不尝试就把他推开。我们也是一个人长大的，我……我不是怪你，我只是希望自己能早点知道。见鬼，我肯定当不好父亲……”</p>
+
+<p>“但你会在他身边。”维吉尔替他说了下去。</p>
+
+<p>“也许，是啊……”他的声音轻了下来。他不想让维吉尔觉得自己是在责备他，或者是在生气，于是吻了他的嘴角。维吉尔亦靠过来。即使<span data-present="space"></span>V<span data-present="space"></span>不在，情况也不同了。“希望那时我也能在你身边。”</p>
+
+<p>维吉尔什么也没说，只是摇了摇头，靠得更近。于是但丁抱住他。他的兄长把头靠在他肩上，他们陷入了沉默。有那么多事情要讨论，有那么多问题要解决。是尼禄打开了局面。如果没有他，但丁又会只能独自一人思念兄长。</p>
+
+<p>“我靠，那么多问题。”</p>
+
+<p>他们俩被熟悉的声音吓得缩了一下，急忙分开，唤出自己的武器。后退几步之后，他们抬头看向上方的栏杆。</p>
+
+<p>尼禄。</p>
+
+<p>但丁能感觉到他哥哥凝固在原地。阎魔消失了，他的脸上现出一丝红晕。尼禄把一切听得一清二楚。</p>
+
+<p>“好吧，我猜现在不用操心怎么告诉你了。”但丁试图说点有用的，不过一如既往地失败了。</p>
+
+<p>维吉尔的身形忽然开始闪烁。尼禄和他都看了过去。一瞬之间，又是<span data-present="space"></span>V<span data-present="space"></span>站在那儿。</p>
+
+<p>“我。操。”尼禄说。</p>
+
+<p>“啊，可真是亲生的……”</p>
+
+<p data-present="end">END</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>前一段说但丁拱了拱他哥后一段又说小跑接近，不确定是不是个<span data-present="space"></span>bug<span data-present="space"></span>不过我忍不住强行合理化加了这句。</p>
+    </li>
+  </ol>
+</div>
+
+		</section>
+	</article>
+
+</main>
+
+
+<footer role="contentinfo">
+	<p>&copy; 2008 - 2020 fiammanda</p>
+	<p>Hosted on Github & Generated with Jekyll</p>
+</footer>
+
+</div>
+
+</body>
+</html>
+
