@@ -25,6 +25,8 @@
 </a>
 {% if page.content contains '<h2>' %}<a role="button" data-expand="nav"></a>{% endif %}
 
+<div id="wrap">
+
 <header role="banner">
 	<ul role="menu">
 		<li role="menuitem"><a class="internal" rel="home" href="{{ site.baseurl }}/">{{ site.name }}</a></li>
@@ -39,5 +41,3 @@
 		<li role="menuitem"><a class="scheme">{{ site.data.svg['scheme'] }}</a></li>
 	</ul>
 </header>
-
-<div id="wrap">

@@ -3,27 +3,36 @@ layout: default
 ---
 
 <video playsinline autoplay muted loop poster="assets/poster.jpg">
-	<source src="polina.webm" type="video/webm">
+	<source src="assets/dmc.mp4" type="video/mp4">
 </video>
 
-<article>
-	<div role="img">{{ site.data.svg['logo'] }}</div>
-	<h1 class="page-title">{{ site.title }}</h1>
-	<p class="page-subtitle">{{ site.author }} / {{ site.name }}</p>
-	<p>{{ site.description }}</p>
-
+<article class="load">
 	<div>
-		<a class="internal" href="{{ site.baseurl }}/weblog/">日常/Weblog</a>
-	</div>
-	<div>
-		<a class="internal" href="{{ site.baseurl }}/widget/">工具/Widget</a>
-	</div>
-	<div>
-		<a class="internal" href="{{ site.baseurl }}/works/">更新/Works</a>
-		<ul>
-			{%- for datum in site.data.works limit: 10 -%}{% if datum[1].show %}
-			<li><a class="internal" href="{{ site.baseurl }}/works/{{ datum[1].slug }}/">{{ datum[1].orig | default: datum[0] }}</a></li>
-			{%- endif -%}{%- endfor -%}
-		</ul>
+		<h1 class="page-title">{{ site.title }}</h1>
+		<p class="page-subtitle">{{ site.description }}</p>
+		<p>本站存放 {{ site.author }} / {{ site.name }} 的一丢丢网路痕迹，感谢您的来访！<span>仅支持现代浏览器。</span></p>
+		<section>
+			<ul>
+				<h2>Navigation</h2>
+				<li><a class="internal" href="{{ site.baseurl }}/weblog/">日常/Weblog</a></li>
+				<li><a class="internal" href="{{ site.baseurl }}/widget/">工具/Widget</a></li>
+				<li><a class="internal" href="{{ site.baseurl }}/works/">更新/Works</a><ul>
+					{%- for datum in site.data.works limit: 10 -%}{% if datum[1].show %}
+					<li><a class="internal" href="{{ site.baseurl }}/works/{{ datum[1].slug }}/">{{ datum[1].orig | default: datum[0] }}</a></li>
+					{%- endif -%}{%- endfor -%}
+				</ul></li>
+			</ul>
+			<hr />
+			<ul>
+				<h2>Find Me</h2>
+				<li><a target="_blank" rel="noopener noreferrer nofollow" href="https://archiveofourown.org/users/fiammanda">AO3</a></li>
+				<li><a target="_blank" rel="noopener noreferrer nofollow" href="https://space.bilibili.com/159653">BiliBili</a></li>
+				<li><a target="_blank" rel="noopener noreferrer nofollow" href="http://fiammanda.lofter.com">Lofter</a></li>
+				<li><a target="_blank" rel="noopener noreferrer nofollow" href="https://weibo.com/fiammanda">Weibo</a></li>
+				<li><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.youtube.com/fiammanda">YouTube</a></li>
+			</ul>
+		</section>
 	</div>
 </article>
+
+<a role="img">{{ site.data.svg['logo'] }}</a>

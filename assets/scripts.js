@@ -48,12 +48,7 @@ $(function() {
 		cursor.addClass('hover');
 	}).on('mouseleave', function() {
 		cursor.removeClass('hover');
-	});/*
-	$('header[role]').on('mouseenter', function() {
-		cursor.css('z-index', '1');
-	}).on('mouseleave', function() {
-		cursor.css('z-index', 'auto');
-	});*/
+	});
 
 	let expandA = $('a[data-expand]'),
 	    expandH = $('header[role]')[0],
@@ -68,7 +63,10 @@ $(function() {
 		}, 250);
 	});
 	$('a[rel="home"], [data-location="home"] a.internal').on('click', function() {
-		expandA.addClass('load');
+		expandA.add('.site-title').addClass('load');
+	});
+	$('[data-location="home"] a[role="img"]').on('click', function() {
+		$(this).prev().toggleClass('load');
 	});
 	expandA.on('click', function() {
 		let menu = this;

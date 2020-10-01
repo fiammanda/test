@@ -47,10 +47,8 @@ layout: default
 
 <nav data-current="{{ page-no }}">
 	{%- for i in (1..page-total) -%}
-		{%- if i == page-no -%}
-			<a class="internal current" href="{{ site.baseurl }}/works/page/{{ i }}/">{{ i }}</a>
-		{%- else -%}
-			<a class="internal" href="{{ site.baseurl }}/works/page/{{ i }}/">{{ i }}</a>
+		{% if i == page-no %}<a class="internal current" href="{{ site.baseurl }}/works/page/{{ i }}/">{{ i }}</a>
+		{% else %}<a class="internal" href="{{ site.baseurl }}/works/page/{{ i }}/">{{ i }}</a>
 		{%- endif -%}
 	{%- endfor -%}
 </nav>
